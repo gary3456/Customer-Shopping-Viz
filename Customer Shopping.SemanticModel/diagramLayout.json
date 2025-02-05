@@ -1,0 +1,73 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 623.33331298828125
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 345,
+            "y": 1383.8984375
+          },
+          "nodeIndex": "df",
+          "nodeLineageTag": "8de1e241-da33-479d-815d-f8eb9a10bceb",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 704,
+            "y": 1422.1484375
+          },
+          "nodeIndex": "Seasonality",
+          "nodeLineageTag": "6601ba9b-a5c5-4eb9-9b0d-f7686d16dc47",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 1307.7421875
+          },
+          "nodeIndex": "State Abbreviation",
+          "nodeLineageTag": "521e88c7-e5fa-4f24-b19c-0644a8d0e61e",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 709,
+            "y": 1128.2734375
+          },
+          "nodeIndex": "Purchase Frequency",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

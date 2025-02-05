@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Customer Shopping"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "0344e3de-0b4c-4424-9473-84ce60aecc4f"
+  }
+}

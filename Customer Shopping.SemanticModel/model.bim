@@ -1,0 +1,1000 @@
+{
+  "compatibilityLevel": 1567,
+  "model": {
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"df\",\"State Abbreviation\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.139.2054.0 (24.12)+334ca1c95b576cc53924655643b0d36f21caac55"
+      },
+      {
+        "name": "PBI_ProTooling",
+        "value": "[\"DaxQueryView_Desktop\",\"DevMode\"]"
+      }
+    ],
+    "culture": "en-US",
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": {
+            "Language": "en-US",
+            "Version": "1.0.0"
+          },
+          "contentType": "json"
+        }
+      }
+    ],
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "relationships": [
+      {
+        "name": "a3259f62-af8e-3b6e-5eae-02290d464e41",
+        "fromColumn": "Frequency of Purchases",
+        "fromTable": "df",
+        "toColumn": "Frequency of Purchases",
+        "toTable": "Purchase Frequency"
+      },
+      {
+        "name": "12e1a4ae-dea6-23ee-3aa5-f8936ffbb1ab",
+        "fromColumn": "Location",
+        "fromTable": "df",
+        "toColumn": "US STATE",
+        "toTable": "State Abbreviation"
+      },
+      {
+        "name": "61adf9b7-fcf5-0698-b4f8-f0522eb79c6b",
+        "fromColumn": "Season",
+        "fromTable": "df",
+        "toColumn": "Season",
+        "toTable": "Seasonality"
+      }
+    ],
+    "sourceQueryCulture": "en-US",
+    "tables": [
+      {
+        "name": "df",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Customer ID",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "8870cd8a-9eb7-4764-9830-8e0b605536c0",
+            "sourceColumn": "Customer ID",
+            "summarizeBy": "count"
+          },
+          {
+            "name": "Age",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "7864f1e0-ce0e-46cf-8502-a2d5ca22538e",
+            "sourceColumn": "Age",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Gender",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ef61519f-3848-4a59-a132-829cc6fced15",
+            "sourceColumn": "Gender",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Item Purchased",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "433739bf-2da2-499f-b507-c70acae14a0b",
+            "sourceColumn": "Item Purchased",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Category",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c545bca7-23e1-4db5-baed-47182737cc47",
+            "sourceColumn": "Category",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Purchase Amount (USD)",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "eac1fb18-5d81-4941-a2cf-4a3d874f82e8",
+            "sourceColumn": "Purchase Amount (USD)",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Location",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataCategory": "StateOrProvince",
+            "dataType": "string",
+            "lineageTag": "c2faa2c3-5b17-4e62-be18-cdd3614c7b15",
+            "sourceColumn": "Location",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Size",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "30793688-52cf-4f29-ae30-89271d5b5e0f",
+            "sourceColumn": "Size",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Color",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e4853771-e3dc-4db5-b4ef-b51e312c64e4",
+            "sourceColumn": "Color",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Season",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "fe515423-5ce5-4b48-a206-3a120796a568",
+            "sourceColumn": "Season",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Review Rating",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "lineageTag": "201af76c-afcf-481f-b943-8c43e049a4ce",
+            "sourceColumn": "Review Rating",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Subscription Status",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "16e0cc74-9042-477a-9b2c-d33104820c70",
+            "sourceColumn": "Subscription Status",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Payment Method",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ed6de08f-1cc5-4531-9bde-b57d1ee5febc",
+            "sourceColumn": "Payment Method",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Shipping Type",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "0d89d5e9-a9a5-4a04-bdd8-864b09192b28",
+            "sourceColumn": "Shipping Type",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Discount Applied",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c02330c3-4563-42b8-9fe0-1b3aa2f64cee",
+            "sourceColumn": "Discount Applied",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Promo Code Used",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "db002a0e-976d-45dd-8cc7-96a5115a89d1",
+            "sourceColumn": "Promo Code Used",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Previous Purchases",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "lineageTag": "506256e2-bd5f-4ae2-b677-14e2375bf02f",
+            "sourceColumn": "Previous Purchases",
+            "summarizeBy": "sum"
+          },
+          {
+            "name": "Preferred Payment Method",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3d9e4025-5a56-4bd6-9799-d377d1b2edff",
+            "sourceColumn": "Preferred Payment Method",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Frequency of Purchases",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "bece3589-858c-4216-9548-0be890b6f7ad",
+            "sourceColumn": "Frequency of Purchases",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "State-Country",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataCategory": "StateOrProvince",
+            "dataType": "string",
+            "expression": "'df'[Location] & \", United State\"",
+            "isDataTypeInferred": true,
+            "lineageTag": "345a6f3b-17ef-436f-a038-65f203996fb4",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "annualPurchaseAmtPrjctn",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "expression": "df[Purchase Amount (USD)] * RELATED('Purchase Frequency'[annualPurchaseFreqInt]) ",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "lineageTag": "250dc7b9-21e4-42ed-a500-012901fca995",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "8de1e241-da33-479d-815d-f8eb9a10bceb",
+        "measures": [
+          {
+            "name": "Subscription Rate",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "VAR _TotalSubscribers = COUNTROWS(FILTER(df, df[Subscription Status] = \"Yes\"))",
+              "VAR _TotalRows = COUNTROWS(df)",
+              "RETURN",
+              "CALCULATE(",
+              "    _TotalSubscribers /",
+              "    _TotalRows",
+              "    )"
+            ],
+            "lineageTag": "e889bcfe-f812-4964-a616-144bfc9aac7c"
+          },
+          {
+            "name": "Total Sales",
+            "expression": [
+              "CALCULATE(",
+              "    SUM(df[Purchase Amount (USD)])",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "3bcb78b9-1392-411c-99b3-20cb0cf7e9df"
+          },
+          {
+            "name": "percentage of purchase freq by shipping",
+            "expression": [
+              "",
+              "VAR _TotalItems = CALCULATE(COUNT(df[Customer ID]), all(df[Shipping Type]))",
+              "VAR _ItemPerPurchaseFreq = CALCULATE(",
+              "    COUNT(df[Customer ID])",
+              ")",
+              "RETURN",
+              "DIVIDE(",
+              "    _ItemPerPurchaseFreq,",
+              "    _TotalItems,",
+              "    0",
+              ")",
+              "",
+              ""
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "e788e4b7-85b8-4460-8d89-2e425138c90a"
+          },
+          {
+            "name": "ItemPerPurchaseFreq",
+            "expression": [
+              "CALCULATE(",
+              "    count(df[Customer ID])",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "5e32e211-6f13-4702-8ce1-fdcafa2ad709"
+          },
+          {
+            "name": "Previous Season Purchase from df",
+            "expression": [
+              "",
+              "var combinedTable = ADDCOLUMNS(",
+              "    df,",
+              "    \"seasonality order\",",
+              "    RELATED( Seasonality[Seasonality Order])",
+              ")",
+              "RETURN",
+              "CALCULATE(",
+              "    MINX(",
+              "        OFFSET(",
+              "            -1,",
+              "            SUMMARIZE( combinedTable, [Season], [seasonality order]),",
+              "            ORDERBY([seasonality order]),",
+              "        ),",
+              "        SUM([Purchase Amount (USD)])",
+              "    )",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "02042fb6-6634-447f-945d-d022f4e8fcb2"
+          },
+          {
+            "name": "Previous Season Amount",
+            "expression": [
+              "",
+              "VAR CurrentOrder = SELECTEDVALUE( 'Seasonality'[Seasonality Order] )",
+              "RETURN",
+              "IF(",
+              "    NOT ISBLANK( CurrentOrder ) && CurrentOrder > 1,",
+              "    CALCULATE(",
+              "        SUM( df[Purchase Amount (USD)] ),",
+              "        ALLEXCEPT( df, df[Location] ),",
+              "        FILTER(",
+              "            ALL( 'Seasonality' ), ",
+              "            'Seasonality'[Seasonality Order] = CurrentOrder - 1",
+              "        )",
+              "    )",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "750f1442-c323-498e-a14f-28aecf9bfc0a"
+          },
+          {
+            "name": "preferredPaymentMethodCount",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    COUNTA( df[Preferred Payment Method] )",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "9ab6bf7a-b62f-470b-948a-2233dffe5985"
+          },
+          {
+            "name": "mostFrequentPreferredPaymentbyLoc",
+            "expression": [
+              "",
+              "var mostCommonItemV3 = ",
+              "\tCALCULATE(",
+              "        INDEX(",
+              "            1,",
+              "            VALUES( df[Preferred Payment Method] ),",
+              "            ORDERBY( [preferredPaymentMethodCount] , DESC)",
+              "        ),",
+              "        ALLEXCEPT( df, df[Location] )",
+              "    )",
+              "",
+              "RETURN",
+              "mostCommonItemV3"
+            ],
+            "lineageTag": "7a7ba1b2-a935-4bf5-a1a4-a75cd6cee423"
+          },
+          {
+            "name": "Average Purchase Amount (USD)",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "CALCULATE(",
+              "    AVERAGEX(",
+              "        df,",
+              "        df[Purchase Amount (USD)]",
+              "    )",
+              ")"
+            ],
+            "lineageTag": "974b8634-acb8-4dc5-bca2-5640e792ad9f"
+          },
+          {
+            "name": "drillTTitle",
+            "expression": "MIN(df[Location]) & \" Regional Market Insight\"",
+            "lineageTag": "49a29b95-3945-4d27-b866-2adbe0218f58"
+          },
+          {
+            "name": "averageAnnualPurchAmtPrjctnPerCustomer",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    AVERAGE(",
+              "        df[annualPurchaseAmtPrjctn]",
+              "    )",
+              ")"
+            ],
+            "lineageTag": "0f2a9c6d-5981-4abc-9f13-a1f4d7a84acb"
+          },
+          {
+            "name": "customerCountByLoc",
+            "expression": [
+              "CALCULATE(",
+              "    COUNTA(df[Customer ID]),",
+              "    ALLEXCEPT(df, df[Location])",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "15400c41-4a3f-4996-b415-d094d03a2625"
+          },
+          {
+            "name": "averageAnnualPurchAmtPrjctnPerCustomerbyLoc",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    AVERAGE(",
+              "        df[annualPurchaseAmtPrjctn]",
+              "    ),",
+              "    ALLEXCEPT( df, df[Location] )",
+              ")"
+            ],
+            "lineageTag": "71dd1eef-e07e-42ab-9518-d57a122929f0"
+          },
+          {
+            "name": "_SumAnnualPurchAmtPrjctnPerCustomer",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    SUM(",
+              "        df[annualPurchaseAmtPrjctn]",
+              "    )",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "335d2853-05d3-4136-b64e-3cc81a319ada"
+          },
+          {
+            "name": "Seasonal Growth (%)",
+            "expression": [
+              "CALCULATE(",
+              "    IF (ISBLANK([Previous Season Amount]), 0,  ",
+              "    ([Total Sales] - [Previous Season Amount]) / [Previous Season Amount]",
+              "    )",
+              ")"
+            ],
+            "formatString": "0.00%;-0.00%;0.00%",
+            "lineageTag": "978d7e4d-2950-4f8a-8eb8-71cdc5564646"
+          },
+          {
+            "name": "avgReviewRatingbyLoc",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "CALCULATE(",
+              "    AVERAGE(df[Review Rating]),",
+              "    ALLEXCEPT( df, df[Location] )",
+              ")"
+            ],
+            "lineageTag": "e448fa24-1bfd-4265-967a-99901b7ba142"
+          },
+          {
+            "name": "Total Customer",
+            "expression": [
+              "CALCULATE( ",
+              "    COUNTA( df[Customer ID] )",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "9c6bfa7c-91c1-492a-afb3-ee9cf87f96e6"
+          },
+          {
+            "name": "Selected State",
+            "expression": [
+              "SELECTEDVALUE(",
+              "    'State Abbreviation'[POSTAL ABBREVIATION]",
+              ")"
+            ],
+            "lineageTag": "b694fdad-d560-4676-a29f-6b347a9140ae"
+          },
+          {
+            "name": "TotalAnnualPurchAmtPrjctn",
+            "expression": [
+              "",
+              "CALCULATE(",
+              "    Sum(",
+              "        df[annualPurchaseAmtPrjctn]",
+              "    ),",
+              "    ALL( df[Location] )",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "a6d2aa8d-b493-40e6-a11c-526be8e8c86d"
+          },
+          {
+            "name": "Top 5 Items",
+            "expression": [
+              "",
+              "RANKX(",
+              "    ALLSELECTED(df[Item Purchased]),",
+              "    [Total Sales],",
+              "    ,",
+              "    DESC,",
+              "    Dense",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "f1d0f838-7eb4-4c8a-9672-576224a7a447"
+          },
+          {
+            "name": "IncludeInTopOrBottom",
+            "expression": [
+              "",
+              "VAR CurrentRank = [Top 5 Items]",
+              "VAR TotalItems = CALCULATE(",
+              "    COUNTROWS(VALUES(df[Item Purchased])),",
+              "    ALLSELECTED(df[Item Purchased])",
+              ")",
+              "RETURN",
+              "IF(CurrentRank <= 5 || CurrentRank > TotalItems - 5, 1, 0)"
+            ],
+            "formatString": "0",
+            "lineageTag": "b8153c32-1358-48a7-b4a8-0642501f05a6"
+          },
+          {
+            "name": "totalItemsPurchased",
+            "expression": [
+              "",
+              "    CALCULATE(",
+              "        COUNT(df[Item Purchased])",
+              "    )"
+            ],
+            "formatString": "0",
+            "lineageTag": "e8b75a48-57be-45bd-8919-2628bc331317"
+          },
+          {
+            "name": "salesAndSalesCountRatio",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "[Total Sales] / [totalItemsPurchased]",
+            "lineageTag": "1511750c-61ff-42c2-af6f-c21a83a7be68"
+          },
+          {
+            "name": "_itemPurchasedMax",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "VAR _itemPurchasedCountT =",
+              "    SUMMARIZE(",
+              "        df,",
+              "        df[Item Purchased],",
+              "        \"itemCount\", COUNT(df[Item Purchased])",
+              "    )",
+              "RETURN",
+              "    MAXX(_itemPurchasedCountT, [itemCount]) * 1.2"
+            ],
+            "lineageTag": "45c4b389-76f8-4fed-9d98-72f42ee31ff7"
+          },
+          {
+            "name": "_itemPurchasedMin",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": [
+              "",
+              "VAR _itemPurchasedCountT =",
+              "    SUMMARIZE(",
+              "        df,",
+              "        df[Item Purchased],",
+              "        \"itemCount\", COUNT(df[Item Purchased])",
+              "    )",
+              "RETURN",
+              "    MINX(_itemPurchasedCountT, [itemCount]) * 0.1"
+            ],
+            "lineageTag": "5d29ef86-619f-4315-a54f-41aa5af1a648"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "df",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Python.Execute(\"import kagglehub#(lf)import os#(lf)import pandas as pd#(lf)#(lf)# Download latest version#(lf)path = kagglehub.dataset_download(\"\"bhadramohit/customer-shopping-latest-trends-dataset\"\")#(lf)#(lf)print(\"\"Path to dataset files:\"\", path)#(lf)#(lf)# Identify the file installed from Kaggle#(lf)csv_file = os.listdir(path)[0]#(lf)#(lf)print(\"\"CSV file installed:\"\", csv_file)#(lf)df = pd.read_csv(os.path.join(path, csv_file))#(lf)print(df)\"),",
+                "    df1 = Source{[Name=\"df\"]}[Value],",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(df1,{{\"Customer ID\", Int64.Type}, {\"Age\", Int64.Type}, {\"Gender\", type text}, {\"Item Purchased\", type text}, {\"Category\", type text}, {\"Purchase Amount (USD)\", Int64.Type}, {\"Location\", type text}, {\"Size\", type text}, {\"Color\", type text}, {\"Season\", type text}, {\"Review Rating\", type number}, {\"Subscription Status\", type text}, {\"Payment Method\", type text}, {\"Shipping Type\", type text}, {\"Discount Applied\", type text}, {\"Promo Code Used\", type text}, {\"Previous Purchases\", Int64.Type}, {\"Preferred Payment Method\", type text}, {\"Frequency of Purchases\", type text}})",
+                "in",
+                "    #\"Changed Type\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Seasonality",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "3580f23579fa4ec5a6ab919d60e258c4"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Season",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "2aec4746-c232-46b1-ae55-37593785bd8d",
+            "sortByColumn": "Seasonality Order",
+            "sourceColumn": "[Season]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Seasonality Order",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "9640561f-558a-4238-90b0-49aadcd7676f",
+            "sourceColumn": "[Seasonality Order]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Icon URL",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataCategory": "ImageUrl",
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "9cc63289-ac51-4cfd-9db6-26711817f43c",
+            "sourceColumn": "[Icon URL]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          }
+        ],
+        "lineageTag": "6601ba9b-a5c5-4eb9-9b0d-f7686d16dc47",
+        "partitions": [
+          {
+            "name": "Seasonality",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "DATATABLE(",
+                "    \"Season\", STRING,",
+                "    \"Seasonality Order\", INTEGER,",
+                "    \"Icon URL\", STRING,",
+                "    {",
+                "        {\"Spring\", 1, \"data:image/svg+xml;utf8,<svg width='504' height='843' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' overflow='hidden'><defs><clipPath id='clip0'><rect x='1524' y='714' width='504' height='843'/></clipPath></defs><g clip-path='url(#clip0)' transform='translate(-1524 -714)'><path d='M1716.84 760.783C1733.49 746.034 1749.82 730.886 1767.07 716.865 1770.56 714.031 1779.75 712.901 1782.57 715.326 1852.66 775.649 1916.8 840.943 1952.77 928.458 1977.4 988.393 1972.72 1047.83 1947.35 1108.72 1911.9 1177.37 1857.61 1215.75 1782.27 1225.49 1782.27 1242.22 1782.27 1258.52 1782.27 1274.83 1781.6 1306.48 1780.93 1338.13 1780.26 1369.79 1777.96 1369.86 1775.66 1369.93 1773.36 1370 1766.96 1355.94 1771.02 1340.38 1770.37 1325.59 1769.67 1309.71 1770.17 1293.77 1770.18 1274.71 1770.21 1256.29 1770.21 1241.02 1770.21 1225.26 1708.02 1218.48 1658.65 1191.2 1624.52 1141.62 1568.18 1059.79 1570 974.791 1617.16 889.175 1643.63 841.132 1679.82 800.636 1716.84 760.783M1890.11 886.489C1896.53 881.198 1902.95 875.903 1909.81 870.252 1874.21 816.375 1831.53 771.705 1782.25 728.949 1782.25 748.356 1782.25 763.597 1781.57 782.159 1781.57 845.924 1781.57 909.686 1781.57 978.33 1819.1 946.155 1853.51 916.66 1890.11 886.489M1770.27 767.187C1770.27 755.53 1770.27 743.876 1770.27 726.873 1755.95 741.042 1745.3 751.593 1732.53 762.989 1698.82 795.531 1667.89 830.354 1642.16 870.63 1684.5 906.013 1725.86 940.586 1769.78 977.289 1769.78 905.845 1769.78 838.136 1770.27 767.187M1945.14 1052.92C1948.54 1049.59 1954.35 1046.66 1954.99 1042.87 1964.88 983.631 1947.56 930.97 1915.32 879.837 1907.3 887.43 1900.76 893.618 1891.94 900.533 1858.93 928.022 1825.79 955.355 1793.06 983.164 1788.2 987.293 1782.01 993.584 1781.89 998.992 1780.98 1042.25 1781.38 1085.54 1781.38 1131.83 1836.71 1104.95 1889.55 1079.27 1945.14 1052.92M1770.17 1073.93C1770.17 1051.03 1770.88 1028.1 1769.74 1005.26 1769.39 998.339 1765.61 989.818 1760.51 985.221 1739.7 966.432 1717.78 948.869 1696.25 930.87 1676.63 914.465 1656.99 898.08 1636.08 880.627 1605.07 930.289 1587.48 981.064 1596.51 1038.26 1597.44 1044.09 1603.74 1051.03 1609.35 1053.84 1648.26 1073.32 1687.62 1091.87 1726.87 1110.67 1740.6 1117.25 1754.42 1123.67 1770.17 1131.09 1770.17 1111.44 1770.17 1094.4 1770.17 1073.93M1899.03 1157.89C1914.36 1133.38 1929.94 1109 1944.75 1084.17 1946.86 1080.64 1945.23 1074.87 1945.33 1070.14 1940.62 1070.83 1935.4 1070.43 1931.29 1072.38 1884.28 1094.65 1837.39 1117.17 1790.67 1140.04 1786.8 1141.93 1781.93 1146.78 1781.78 1150.43 1780.92 1170.82 1781.37 1191.26 1781.37 1213.03 1828.17 1209.35 1865.29 1190.09 1899.03 1157.89M1603.72 1065.59C1610.12 1083.42 1613.94 1102.76 1623.39 1118.8 1655.74 1173.77 1704.05 1205.63 1770.2 1213.48 1770.2 1193.53 1769.52 1175.33 1770.46 1157.22 1771 1146.89 1766.94 1142.22 1758.01 1138.04 1707.28 1114.29 1656.85 1089.92 1603.72 1065.59Z' fill='#12150D' fill-rule='evenodd'/><path d='M1715.12 761C1679.73 801.161 1643.59 841.603 1617.16 889.583 1570.05 975.086 1568.24 1059.97 1624.51 1141.7 1658.59 1191.21 1707.9 1218.45 1770 1225.23 1770 1240.96 1770 1256.22 1769.72 1273 1669.08 1261.85 1607.15 1203.05 1572.95 1111.04 1553.38 1058.38 1537.56 1005.03 1540.31 947.823 1544.21 866.928 1613.87 779.322 1688.1 763.072 1696.37 761.264 1705.06 761.405 1715.12 761Z' fill='#A6CD4C' fill-rule='evenodd'/><path d='M2018.18 855.464C1990.77 879.856 1940.48 872.708 1922.16 840.338 1912.07 822.496 1905.91 801.387 1902.54 780.993 1898.55 756.916 1917.33 729.297 1939.04 720.259 1958.17 712.29 1981.16 718.823 1997.26 741.1 2021.72 774.944 2031.14 812.843 2018.18 855.464Z' fill='#A8D04D' fill-rule='evenodd'/><path d='M1783.72 1275.79C1782 1259.25 1782 1242.88 1782 1226.06 1857.41 1216.28 1911.76 1177.72 1946.94 1110 1947.92 1130.88 1950.64 1152.93 1947.61 1174.14 1938.22 1240 1903.21 1271.17 1836.75 1275.38 1819.71 1276.46 1802.56 1275.81 1783.72 1275.79Z' fill='#A5CB4C' fill-rule='evenodd'/><path d='M1856.16 1533.36C1856.2 1509.78 1856.2 1487.66 1856.2 1465.61 1868.02 1464.58 1868.02 1464.58 1911.76 1527.64 1911.76 1508 1911.31 1492.22 1912.05 1476.49 1912.25 1472.24 1916.04 1468.16 1918.17 1464 1919.77 1468.06 1922.66 1472.1 1922.73 1476.19 1923.16 1501.05 1922.95 1525.93 1922.95 1553 1905.33 1549.09 1902.5 1533.19 1894.19 1523.23 1885.12 1512.36 1877.8 1500.04 1867.88 1485.71 1867.88 1508.75 1867.88 1529.13 1867.88 1549.31 1855.64 1551.25 1855.64 1551.25 1856.16 1533.36Z' fill='#1C1C1C' fill-rule='evenodd'/><path d='M1761.17 1494.03C1757 1500.01 1753.29 1504.76 1751.33 1507.27 1758.51 1522.4 1765.19 1536.5 1772 1550.86 1756.97 1557.64 1756.28 1546.77 1753.51 1539.39 1744.75 1516.1 1741.41 1513.85 1718.96 1517.32 1717.55 1529.08 1716.21 1540.93 1714.38 1552.7 1714.31 1553.12 1709.36 1552.76 1706 1552.76 1706 1523.54 1706 1495.12 1706 1466.72 1745.05 1458.99 1769.36 1467.63 1761.17 1494.03M1716.43 1482.57C1716.43 1490.27 1716.43 1497.96 1716.43 1512.36 1730.61 1504.93 1740.81 1500.72 1749.27 1494.21 1750.98 1492.89 1747.82 1479.59 1743.94 1477.55 1735.48 1473.11 1724.62 1467.16 1716.43 1482.57Z' fill='#191818' fill-rule='evenodd'/><path d='M1963.81 1485.53C1976.18 1467.55 1993.06 1462.41 2012.37 1464.41 2016.15 1464.8 2019.46 1469.67 2021.68 1474.05 1981.94 1475.8 1968.22 1485.32 1969.37 1511.22 1970.39 1534.27 1986.29 1546.58 2014.39 1544.96 2014.39 1535.21 2014.39 1525.31 2014.39 1515.54 2029.26 1514.62 2029.51 1515.48 2026.43 1551.17 2003.72 1559.88 1980.43 1556.77 1967.93 1542.2 1953.24 1525.11 1952.42 1506.2 1963.81 1485.53Z' fill='#242424' fill-rule='evenodd'/><path d='M1614.47 1494.18C1614.39 1484.01 1614.39 1475.49 1614.39 1467.05 1649.84 1459.76 1670.47 1465.63 1673.5 1483.72 1676.82 1503.57 1663.96 1513.61 1626.56 1519.91 1626.56 1530.41 1626.56 1541.07 1626.56 1551.73 1625.11 1552.82 1623.65 1553.91 1622.2 1555 1619.44 1551.32 1614.47 1547.74 1614.3 1543.94 1613.6 1527.94 1614.33 1511.88 1614.47 1494.18M1625.73 1501.94C1633.23 1517 1644.72 1507.96 1652.49 1504.12 1657.17 1501.8 1661.75 1489.64 1659.63 1484.96 1652.88 1470.08 1639.19 1472.77 1625.71 1475.66 1625.71 1484.01 1625.71 1491.38 1625.73 1501.94Z' fill='#191818' fill-rule='evenodd'/><path d='M1562.29 1475.7C1555.81 1475.46 1550.47 1474.45 1545.83 1475.83 1542.09 1476.94 1536.76 1480.72 1536.51 1483.69 1536.17 1487.75 1538.89 1493.76 1542.24 1496.09 1549.54 1501.19 1558.27 1504.14 1566.05 1508.62 1576.77 1514.79 1584.57 1525.09 1579.32 1536.55 1575.57 1544.75 1565.39 1551.36 1556.59 1555.34 1550.06 1558.3 1541.06 1556.6 1533.34 1555.59 1530 1555.15 1527.1 1551.21 1524 1548.86 1527.42 1547.51 1530.79 1545.2 1534.28 1545 1540.95 1544.62 1547.98 1546.8 1554.29 1545.35 1559.56 1544.15 1567.93 1539.3 1567.93 1536.05 1567.95 1530.7 1563.36 1524.03 1558.8 1520.3 1552.85 1515.41 1543.41 1514.35 1538.43 1508.89 1532.28 1502.13 1524.67 1491.69 1526.01 1484.41 1527.38 1477.01 1538.11 1470.05 1546.21 1465.69 1551.48 1462.86 1559.51 1464.2 1566.04 1465.3 1569.15 1465.83 1571.64 1470.17 1574.4 1472.79 1570.84 1473.85 1567.29 1474.9 1562.29 1475.7Z' fill='#202020' fill-rule='evenodd'/><path d='M1814.98 1501.28C1814.96 1519.33 1814.96 1535.69 1814.96 1552.06 1813.58 1553.04 1812.2 1554.02 1810.81 1555 1808.25 1551.23 1803.57 1547.52 1803.45 1543.68 1802.79 1521.02 1802.9 1498.32 1803.51 1475.65 1803.62 1471.72 1807.38 1467.88 1809.46 1464 1811.31 1464.72 1813.15 1465.43 1815 1466.15 1815 1477.3 1815 1488.45 1814.98 1501.28Z' fill='#12150D' fill-rule='evenodd'/><path d='M1769.78 1075.66C1769.78 1094.37 1769.78 1111.38 1769.78 1131 1754.05 1123.59 1740.26 1117.18 1726.54 1110.61 1687.35 1091.85 1648.04 1073.33 1609.19 1053.89 1603.58 1051.08 1597.28 1044.16 1596.36 1038.34 1587.35 981.25 1604.9 930.569 1635.88 881 1656.76 898.42 1676.37 914.774 1695.96 931.149 1717.46 949.115 1739.36 966.645 1760.14 985.399 1765.23 989.987 1769.01 998.492 1769.35 1005.4 1770.49 1028.2 1769.78 1051.09 1769.78 1075.66Z' fill='#A5CC4A' fill-rule='evenodd'/><path d='M1942 1053.74C1889.19 1079.42 1836.38 1105.11 1781.09 1132 1781.09 1085.69 1780.69 1042.39 1781.6 999.109 1781.71 993.699 1787.9 987.406 1792.76 983.274 1825.48 955.456 1858.59 928.111 1893.69 901 1905.45 927.372 1916.32 952.981 1924.4 979.442 1931.83 1003.73 1936.25 1028.93 1942 1053.74Z' fill='#A5CC4A' fill-rule='evenodd'/><path d='M1770 770.675C1770 838.534 1770 906.395 1770 978 1725.95 941.215 1684.46 906.564 1642 871.101 1667.81 830.734 1698.83 795.833 1735.12 763 1748.4 765.414 1759.2 768.045 1770 770.675Z' fill='#A5CC4A' fill-rule='evenodd'/><path d='M1888 887.604C1853.7 917.174 1819.41 946.744 1782 979 1782 910.181 1782 846.257 1783.48 781 1830.34 804.997 1863.2 842.413 1888 887.604Z' fill='#A5CC4A' fill-rule='evenodd'/><path d='M1898.2 1158.69C1865.25 1190.05 1828.04 1209.32 1781.12 1213 1781.12 1191.22 1780.67 1170.76 1781.53 1150.36 1781.69 1146.7 1786.56 1141.85 1790.44 1139.95 1837.28 1117.06 1884.29 1094.53 1931.41 1072.24 1935.54 1070.29 1940.77 1070.69 1945.49 1070 1945.39 1074.73 1947.02 1080.5 1944.91 1084.05 1930.06 1108.89 1914.44 1133.28 1898.2 1158.69Z' fill='#A3CA48' fill-rule='evenodd'/><path d='M1605 1066C1656.99 1090.28 1707.58 1114.68 1758.46 1138.46 1767.42 1142.65 1771.49 1147.32 1770.95 1157.67 1770.01 1175.8 1770.69 1194.03 1770.69 1214 1704.33 1206.14 1655.87 1174.24 1623.43 1119.2 1613.95 1103.14 1610.12 1083.77 1605 1066Z' fill='#A3CA48' fill-rule='evenodd'/><path d='M1889.14 887C1863.07 842.23 1829.99 804.88 1783.14 779.261 1782 763.675 1782 748.423 1782 729 1831.45 771.79 1874.28 816.495 1910 870.414 1903.12 876.07 1896.68 881.368 1889.14 887Z' fill='#F4F4F3' fill-rule='evenodd'/><path d='M1943.91 1054C1936.74 1029.47 1932.28 1004.19 1924.8 979.828 1916.65 953.289 1905.7 927.605 1895 900.789 1900.61 893.826 1907.19 887.618 1915.27 880 1947.73 931.304 1965.16 984.141 1955.21 1043.58 1954.57 1047.38 1948.72 1050.32 1943.91 1054Z' fill='#F4F4F3' fill-rule='evenodd'/><path d='M1769.76 769C1758.81 767.995 1748.11 765.367 1736 762.531 1745.18 751.757 1755.77 741.19 1770 727 1770 744.029 1770 755.701 1769.76 769Z' fill='#F4F4F3' fill-rule='evenodd'/><path d='M1716 1472.69C1724.36 1458.75 1735.45 1464.71 1744.08 1469.16 1748.04 1471.19 1751.26 1484.51 1749.51 1485.83 1740.88 1492.35 1730.47 1496.56 1716 1504 1716 1489.58 1716 1481.88 1716 1472.69Z' fill='#E2E2E2' fill-rule='evenodd'/><path d='M1626.01 1490.48C1626 1481.67 1626 1474.43 1626 1466.22 1639.3 1463.38 1652.81 1460.74 1659.47 1475.36 1661.57 1479.96 1657.05 1491.91 1652.42 1494.18 1644.76 1497.96 1633.42 1506.84 1626.01 1490.48Z' fill='#F4F4F3' fill-rule='evenodd'/></g></svg>\"},",
+                "        {\"Summer\", 2, \"data:image/svg+xml;utf8, <svg width='735' height='849' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' overflow='hidden'><defs><clipPath id='clip0'><rect x='2183' y='708' width='735' height='849'/></clipPath></defs><g clip-path='url(#clip0)' transform='translate(-2183 -708)'><path d='M2647 773.816C2772.49 736.029 2887.72 824.63 2907.57 945.734 2915.59 994.714 2923.22 1043.61 2913.27 1093.5 2902.72 1146.35 2870.98 1179.52 2820.96 1196.02 2803.71 1201.71 2785.6 1204.77 2766.04 1208 2767.06 1165.44 2790.8 1140.85 2831.95 1136.84 2842.19 1135.84 2852.46 1135.13 2862.66 1133.83 2867.26 1133.25 2871.72 1131.57 2876.24 1130.38 2876.7 1128.76 2877.16 1127.13 2877.62 1125.5 2865.37 1116.75 2853.07 1108.08 2840.89 1099.23 2797.92 1067.98 2797.67 1013.61 2840.35 982.381 2849.12 975.968 2858.13 969.901 2866.81 963.371 2870.5 960.586 2873.61 957.013 2876.98 953.799 2876.58 952.137 2876.17 950.475 2875.77 948.814 2860.76 947.382 2845.75 946.06 2830.75 944.498 2778.29 939.032 2750.59 891.501 2771.81 843.307 2776.64 832.334 2782.17 821.66 2786.76 810.591 2788.2 807.106 2787.61 802.773 2788.22 795.676 2769.33 804.098 2754.04 811.593 2738.24 817.825 2699.54 833.1 2658.46 813.052 2647 773.816Z' fill='#FBD64A' fill-rule='evenodd'/><path d='M2646.26 772.742C2658.62 813.165 2699.75 833.223 2738.49 817.94 2754.29 811.705 2769.6 804.206 2788.51 795.779 2787.9 802.879 2788.49 807.215 2787.05 810.701 2782.46 821.777 2776.92 832.457 2772.08 843.436 2750.84 891.657 2778.57 939.216 2831.09 944.684 2846.1 946.247 2861.13 947.57 2876.15 949.003 2876.55 950.665 2876.96 952.328 2877.36 953.991 2873.98 957.206 2870.88 960.782 2867.18 963.568 2858.5 970.102 2849.47 976.173 2840.7 982.589 2797.98 1013.84 2798.23 1068.24 2841.24 1099.5 2853.43 1108.36 2865.74 1117.03 2878 1125.79 2877.54 1127.42 2877.08 1129.05 2876.62 1130.67 2872.1 1131.86 2867.63 1133.54 2863.03 1134.13 2852.82 1135.42 2842.53 1136.14 2832.29 1137.14 2791.1 1141.15 2767.33 1165.75 2764.8 1208.44 2771.18 1227.23 2777.2 1244.89 2783.3 1262.52 2785.42 1268.65 2787.75 1274.7 2789.98 1280.79 2788.8 1282.11 2787.61 1283.44 2786.43 1284.76 2773.27 1278.91 2760 1273.28 2746.97 1267.13 2729.84 1259.04 2712.43 1255.51 2693.71 1261.08 2665.96 1269.36 2646.98 1291.51 2643.63 1320.28 2641.69 1336.94 2639.91 1353.61 2638.05 1370.28 2636.25 1370.81 2634.44 1371.35 2632.63 1371.89 2623.08 1358.86 2613.62 1345.76 2603.95 1332.82 2584.04 1306.19 2552.58 1294.75 2523.66 1307.4 2509.76 1313.48 2497.87 1325.6 2487.08 1336.9 2477.18 1347.26 2469.97 1360.2 2461.58 1372 2459.83 1371.45 2458.08 1370.9 2456.34 1370.36 2452.37 1347.42 2448.39 1324.49 2445.42 1299.78 2448.75 1297.34 2451.08 1296.69 2453.72 1297.23 2457.43 1313.81 2460.84 1329.18 2465.1 1348.38 2485.39 1314.85 2508.57 1291.27 2547.78 1291.63 2586.32 1292 2608.71 1316.5 2628.71 1345.81 2630.66 1308.81 2638.99 1277.21 2672.29 1257.94 2705.9 1238.49 2737.87 1248.02 2769.69 1265.51 2763.65 1246.24 2758.29 1229.12 2753.12 1210.58 2752.68 1182.88 2761.08 1158.7 2783.02 1145.1 2802.89 1132.78 2826.99 1127.26 2848.81 1118.9 2821.83 1102.35 2798.03 1080.01 2797.76 1041.44 2797.49 1002.75 2821.05 979.673 2851.04 958.934 2813.75 957.478 2782.56 947.869 2763.65 914.677 2744.83 881.661 2753.93 850.152 2773.3 814.807 2744.11 828.884 2719.67 840.194 2691.72 831.914 2663.88 823.666 2645.74 805.366 2634.85 777.627 2632.79 763.15 2630.89 750.024 2628.31 732.277 2608.61 766.981 2585.07 789.825 2546.99 790.117 2508.36 790.413 2485.08 766.352 2464.77 735.974 2463.17 772.515 2454.43 804.082 2421.6 823.408 2388.26 843.028 2356.17 834.309 2322.67 815.696 2329.58 834.9 2335.26 850.702 2340.69 867.933 2338.99 932.476 2299.92 955.836 2238.98 958.481 2246.28 963.816 2249.44 966.162 2252.64 968.457 2304.67 1005.81 2310.36 1054.66 2267.18 1103.15 2257.98 1109.35 2249.85 1115.13 2237.55 1123.88 2278.38 1124.67 2310.3 1133.2 2329.79 1166.84 2349.19 1200.35 2338.16 1232.1 2321.41 1265.92 2336.41 1259.35 2347.37 1254.55 2359.72 1249.62 2389.42 1243.07 2414.69 1249.35 2435.83 1269.04 2440.33 1273.24 2441.46 1281.06 2444.15 1287.21 2442.55 1287.85 2440.96 1288.5 2439.36 1289.14 2419 1265.09 2394.84 1251.78 2362.43 1261.73 2343.78 1269.14 2325.13 1276.56 2306.49 1283.98 2305.27 1282.79 2304.06 1281.59 2302.85 1280.4 2307.63 1269.31 2312.94 1258.42 2317.05 1247.09 2321.48 1234.86 2327.12 1222.41 2328.16 1209.72 2331.15 1173.03 2303.98 1142.01 2267.04 1137.64 2250.38 1135.67 2233.69 1133.96 2217.02 1132.14 2216.4 1130.18 2215.78 1128.22 2215.16 1126.26 2226.37 1118.15 2237.58 1110.04 2250.56 1100.7 2296.38 1065.02 2295.41 1012.75 2250.13 980.597 2240.82 973.991 2231.31 967.663 2222.29 960.696 2219.7 958.7 2218.5 954.915 2215 949.264 2233.25 947.498 2248.44 946.244 2263.59 944.52 2306.62 939.611 2332.64 907.137 2327.15 865.415 2327.15 865.415 2327.6 864.062 2328.45 863.11 2328.86 861.262 2328.43 860.362 2327.99 859.462 2320.05 840.62 2312.08 821.784 2304.26 802.886 2303.99 802.251 2305.26 800.983 2307.24 797.489 2312.75 799.657 2318.76 801.791 2324.57 804.353 2332.93 808.032 2341.07 812.199 2349.43 815.851 2397.62 836.868 2445.11 809.029 2450.54 756.616 2452.09 741.645 2453.48 726.657 2455.3 708 2461.7 713.015 2465.17 714.764 2467.26 717.543 2474.8 727.581 2481.68 738.114 2489.17 748.193 2519.62 789.183 2573.61 789.337 2604.06 748.519 2613.47 735.912 2622.5 723.026 2631.7 710.268 2633.61 710.542 2635.53 710.817 2637.45 711.092 2640.09 731.254 2642.73 751.415 2646.26 772.742Z' fill='#1A1812' fill-rule='evenodd'/><path d='M2324.87 865C2331.84 906.799 2305.96 939.379 2263.14 944.304 2248.07 946.034 2232.96 947.292 2214.8 949.064 2218.28 954.733 2219.47 958.531 2222.05 960.533 2231.02 967.523 2240.49 973.872 2249.75 980.499 2294.8 1012.76 2295.76 1065.2 2250.94 1100 2199.51 1078.78 2181.93 1037 2183.05 985.741 2183.38 970.525 2188.03 953 2196.65 940.802 2227.43 897.27 2267.23 866.665 2324.87 865Z' fill='#FAD64A' fill-rule='evenodd'/><path d='M2362.79 1263.12C2394.63 1252.17 2418.72 1265.48 2439.02 1289.53 2440.61 1288.88 2442.2 1288.24 2443.79 1287.6 2441.12 1281.45 2439.99 1273.63 2435.5 1269.43 2414.42 1249.73 2389.22 1243.45 2359.27 1248.82 2350.1 1224.89 2352.97 1203.46 2367.32 1184 2394.06 1216.96 2426.42 1240.59 2465.27 1254.87 2480.69 1260.54 2496.75 1264.46 2512 1270.19 2496.53 1290.17 2475.84 1295.76 2453.02 1296.42 2450.7 1297.08 2448.37 1297.73 2444.8 1298.74 2411.27 1300.15 2380.91 1296.81 2362.79 1263.12Z' fill='#F4D148' fill-rule='evenodd'/><path d='M2600.47 1536.26C2598.35 1543.73 2604.1 1555.76 2588 1551.8 2591.1 1523.36 2594.17 1495.13 2597.44 1465.08 2602.21 1464.76 2607.63 1464.4 2613.57 1464 2621.12 1486.01 2628.41 1507.25 2637.15 1532.72 2646.84 1507.55 2654.89 1486.63 2663.31 1464.78 2667.5 1464.78 2672.52 1464.78 2679.32 1464.78 2681.54 1493.58 2683.76 1522.33 2686 1551.35 2675.13 1555.47 2672.22 1551.5 2671.97 1541.73 2671.51 1523.49 2670.08 1505.28 2665.62 1486.21 2658.67 1503.72 2651.98 1521.33 2644.62 1538.66 2642.42 1543.85 2638.34 1548.24 2635.13 1553 2632.2 1547.93 2628.58 1543.13 2626.46 1537.74 2620.1 1521.53 2614.32 1505.09 2604.5 1489.34 2603.21 1504.49 2601.93 1519.65 2600.47 1536.26Z' fill='#242424' fill-rule='evenodd'/><path d='M2538.52 1520.32C2537.42 1509.48 2536.49 1500.22 2535.57 1490.96 2534.05 1490.76 2532.54 1490.56 2531.04 1490.36 2524.14 1507.77 2517.44 1525.27 2510.21 1542.55 2508.69 1546.2 2505.29 1549.08 2502.75 1552.31 2500.28 1548.97 2496.92 1545.96 2495.49 1542.23 2488.45 1523.85 2481.92 1505.27 2472.05 1486.89 2470.81 1499.3 2470.24 1511.82 2468.12 1524.07 2466.45 1533.71 2472.73 1547.44 2461.27 1553 2459.18 1552.2 2457.09 1551.39 2455 1550.59 2458.19 1522.6 2461.37 1494.61 2464.73 1465.15 2469.93 1464.82 2475.33 1464.49 2480.65 1464.15 2488.22 1486 2495.43 1506.83 2504.2 1532.15 2512.49 1511.18 2520.51 1494.51 2525.5 1477 2529.12 1464.33 2534.82 1461.51 2546.64 1466 2548.76 1493.75 2550.88 1521.4 2553 1549.06 2552.03 1550.35 2551.06 1551.64 2550.09 1552.94 2546.7 1549.96 2541.32 1547.5 2540.35 1543.89 2538.48 1536.9 2539.1 1529.26 2538.52 1520.32Z' fill='#1C1C1C' fill-rule='evenodd'/><path d='M2810.4 1524.19C2810.46 1503.98 2810.46 1485.42 2810.46 1465.23 2829.43 1466.79 2850.68 1456.95 2864.79 1475.57 2873.68 1487.29 2865.58 1499.14 2856.63 1507.48 2863.6 1522.24 2870.24 1536.3 2877 1550.61 2862.34 1557.77 2861.5 1547.3 2858.63 1539.77 2849.78 1516.53 2847.08 1514.73 2822.26 1516.92 2822.26 1522.82 2822.26 1528.9 2822.26 1534.97 2822.26 1540.52 2822.26 1546.08 2822.26 1551.57 2809.37 1551.82 2809.37 1551.82 2810.4 1524.19M2821.76 1491.82C2822.16 1496.65 2822.55 1501.49 2822.94 1506.19 2846.43 1506.22 2856.25 1500.86 2855.69 1489.11 2855.1 1476.95 2844.2 1472.44 2822.46 1475.93 2822.23 1480.04 2821.99 1484.4 2821.76 1491.82Z' fill='#1C1C1C' fill-rule='evenodd'/><path d='M2749.66 1541.99C2756.91 1541.74 2762.63 1540.82 2768.15 1541.53 2771.59 1541.97 2774.73 1544.85 2778 1546.64 2775.13 1548.4 2772.3 1551.59 2769.37 1551.69 2754.3 1552.2 2739.21 1551.93 2724 1551.93 2724 1521.55 2724 1493.22 2724 1464 2740.76 1464 2756.88 1464 2773.07 1464 2771.87 1471.8 2771.87 1471.8 2736.82 1473.9 2736.82 1482 2736.82 1490.18 2736.82 1498.94 2747.1 1500.29 2757.43 1501.66 2767.76 1503.02 2767.43 1505.19 2767.09 1507.36 2766.76 1509.53 2756.95 1509.53 2747.15 1509.53 2733.34 1509.53 2741.87 1521.06 2724.16 1538.88 2749.66 1541.99Z' fill='#242424' fill-rule='evenodd'/><path d='M2408.03 1484.81C2409.43 1476.14 2401.12 1462.84 2419.45 1465.87 2419.45 1485.15 2420.91 1504.51 2419.07 1523.55 2416.93 1545.86 2403.5 1556.46 2382.6 1555.98 2362.42 1555.52 2351.15 1545.05 2349.14 1522.58 2347.72 1506.72 2347.79 1490.65 2348.48 1474.72 2348.64 1471.03 2354.05 1467.57 2357.04 1464 2358.53 1465.11 2360.01 1466.21 2361.5 1467.32 2361.5 1484.91 2361.04 1502.52 2361.65 1520.09 2362.14 1534.43 2366.81 1545.9 2384.34 1546.07 2401.87 1546.24 2406.57 1534.94 2407.46 1520.54 2408.16 1509.18 2407.93 1497.76 2408.03 1484.81Z' fill='#202020' fill-rule='evenodd'/><path d='M2277.2 1545.89C2282.03 1545.96 2285.98 1546.97 2288.76 1545.62 2294.4 1542.87 2299.41 1538.83 2304.68 1535.32 2301.1 1530.06 2298.49 1523.57 2293.71 1519.83 2287.57 1515.02 2278.15 1513.88 2272.95 1508.47 2266.88 1502.15 2259.18 1491.9 2260.69 1485.26 2262.45 1477.52 2272.49 1470.15 2280.66 1465.84 2286.47 1462.78 2295.27 1464.2 2302.45 1465.36 2305.73 1465.89 2308.33 1470.6 2311.24 1473.42 2310.29 1474.44 2309.34 1475.46 2308.39 1476.48 2299.96 1476.02 2291.37 1474.38 2283.19 1475.56 2278.63 1476.22 2272.87 1480.88 2271.27 1485.09 2270.23 1487.81 2274.85 1494.35 2278.54 1496.79 2286.07 1501.77 2296.57 1503.41 2302.34 1509.64 2308.92 1516.75 2316.42 1528.37 2314.77 1536.19 2313.13 1543.94 2301.42 1551.19 2292.55 1555.28 2285.98 1558.31 2276.79 1556.6 2268.94 1555.66 2265.42 1555.23 2262.3 1551.51 2259 1549.28 2262.9 1547.88 2266.74 1546.27 2270.73 1545.19 2272.24 1544.77 2274.09 1545.55 2277.2 1545.89Z' fill='#202020' fill-rule='evenodd'/><path d='M2327 860C2327.62 860.035 2328.06 860.868 2327.99 862 2327.26 861.8 2327.03 861.297 2327 860Z' fill='#242424' fill-rule='evenodd'/><path d='M2634.79 779C2645.53 805.388 2663.69 823.689 2691.55 831.938 2719.52 840.217 2743.98 828.907 2773.2 814.829 2753.81 850.176 2744.7 881.687 2763.53 914.705 2782.47 947.899 2813.68 957.508 2851 958.965 2820.98 979.705 2797.41 1002.78 2797.68 1041.48 2797.94 1080.05 2821.76 1102.39 2848.76 1118.94 2826.93 1127.3 2802.81 1132.82 2782.93 1145.14 2760.97 1158.74 2752.56 1182.92 2751.49 1210.83 2732.47 1212.9 2715.17 1213.36 2698.49 1212.75 2763.35 1150.28 2788.83 1076.7 2767.84 989.269 2758.95 952.272 2746.22 916.708 2717.11 889.784 2717.1 889.839 2717.22 889.692 2716.77 888.602 2692.07 861.194 2664.16 840.22 2629.03 827.794 2625.25 826.313 2622.34 825.575 2618.49 824.17 2609.46 821.596 2601.37 819.697 2592.66 817.251 2591.01 816.086 2589.94 816.007 2587.43 815.918 2582.13 814.574 2578.21 813.784 2575 812.139 2595.4 800.523 2615.09 789.76 2634.79 779Z' fill='#F4D148' fill-rule='evenodd'/><path d='M2697.35 1213.58C2714.63 1213.12 2731.92 1212.66 2750.72 1212 2757.6 1229.02 2762.96 1246.25 2769 1265.64 2737.18 1248.04 2705.21 1238.45 2671.6 1258.02 2638.29 1277.41 2629.96 1309.2 2628.01 1346.41 2608 1316.93 2585.61 1292.28 2547.07 1291.91 2507.86 1291.55 2484.68 1315.27 2464.38 1349 2460.13 1329.69 2456.72 1314.22 2453 1297.55 2475.58 1295.67 2496.34 1290.05 2513.47 1269.75 2583.7 1275.35 2644.22 1256.83 2697.35 1213.58Z' fill='#F4F4F3' fill-rule='evenodd'/><path d='M2634 777.344C2614.48 789.456 2594.82 800.218 2573.09 811.961 2497.24 805.755 2434.67 830.063 2380.21 880 2366.11 875.123 2353.19 870.667 2340.26 866.212 2334.58 850.412 2328.9 834.611 2322 815.41 2355.48 834.02 2387.55 842.738 2420.87 823.121 2453.69 803.796 2462.42 772.233 2464.02 735.696 2484.32 766.071 2507.59 790.129 2546.19 789.833 2584.25 789.542 2607.78 766.699 2627.46 732 2630.04 749.745 2631.95 762.869 2634 777.344Z' fill='#F4F4F3' fill-rule='evenodd'/><path d='M2340.32 868C2353.46 871.024 2366.34 875.477 2380 881.344 2375.85 888.834 2370.91 894.907 2365.07 901.748 2338.36 937.052 2321.38 974.986 2319.05 1019.52 2318.43 1021.5 2318.46 1022.76 2318.09 1025.57 2319.62 1047.92 2321.56 1068.71 2323.41 1090.67 2323.77 1093.3 2324.22 1094.77 2324.66 1097.51 2324.91 1100.45 2325.17 1102.12 2323.94 1104 2304.36 1103.67 2286.26 1103.15 2268.16 1102.62 2310.1 1054.6 2304.44 1005.78 2252.6 968.453 2249.42 966.16 2246.27 963.815 2239 958.484 2299.71 955.841 2338.62 932.497 2340.32 868Z' fill='#F4D148' fill-rule='evenodd'/><path d='M2266.63 1103C2285.87 1103.1 2304.04 1103.63 2324.25 1104.88 2339.53 1131.43 2352.77 1157.26 2366 1183.09 2352.5 1203.07 2349.62 1224.52 2357.42 1248.61 2346.82 1254.61 2335.86 1259.42 2320.86 1266 2337.6 1232.14 2348.64 1200.33 2329.23 1166.78 2309.75 1133.09 2277.83 1124.55 2237 1123.76 2249.31 1115 2257.43 1109.22 2266.63 1103Z' fill='#F4F4F3' fill-rule='evenodd'/><path d='M2367.54 1183.76C2353.42 1157.5 2340.19 1131.72 2326.4 1105.01 2325.59 1102.41 2325.34 1100.74 2325.71 1097.18 2325.54 1093.46 2324.73 1091.63 2323.92 1089.79 2321.97 1069 2320.03 1048.2 2319 1025.07 2319.98 1021.52 2320.04 1020.29 2320.1 1019.06 2321.79 975.247 2338.83 937.305 2367.18 903.834 2370.72 906.087 2371.81 907.268 2372.46 909.489 2362.14 927.21 2352.23 943.894 2341.98 961.928 2341.52 964.211 2341.41 965.138 2341.26 967.332 2338.85 975.83 2336.5 983.062 2333.37 991.073 2332.44 993.287 2332.28 994.722 2332.41 997.548 2326.79 1034.29 2326.78 1069.29 2338.71 1104.87 2350.89 1128.62 2363.05 1151.12 2375.52 1174.7 2413.16 1221.18 2460.09 1249.55 2520.5 1256.95 2577.56 1261.53 2629.45 1251.44 2675.62 1215.92 2722.1 1180.62 2751.43 1135.49 2760.95 1078.73 2771.9 1013.36 2754.98 954.707 2715.63 900.088 2716.3 895.377 2716.73 892.688 2717.17 890 2746.23 916.961 2758.94 952.506 2767.81 989.483 2788.78 1076.87 2763.33 1150.41 2698.56 1212.84 2644.86 1256.88 2584.38 1275.28 2514.7 1268.7 2497.28 1264.19 2481.18 1260.27 2465.73 1254.6 2426.78 1240.33 2394.34 1216.71 2367.54 1183.76Z' fill='#12150D' fill-rule='evenodd'/><path d='M2822 1479.3C2822.24 1473.49 2822.48 1469.19 2822.72 1465.13 2844.47 1461.68 2855.39 1466.14 2855.98 1478.14 2856.54 1489.73 2846.71 1495.03 2823.19 1495 2822.8 1490.35 2822.41 1485.58 2822 1479.3Z' fill='#F4F4F3' fill-rule='evenodd'/><path d='M2368 902.628C2371.4 894.731 2376.35 888.67 2381.69 881.616 2435.33 830.398 2497.86 806.151 2572.95 813.196 2578.22 813.853 2582.12 814.641 2588.06 816.471 2590.09 817.509 2591.65 817.94 2591.65 817.94 2591.65 817.94 2593.26 817.855 2593.26 817.855 2601.33 819.749 2609.4 821.644 2619.1 825.155 2623.76 827.372 2626.77 827.972 2629.79 828.571 2663.99 840.216 2691.84 861.132 2715 888.746 2710.96 890.192 2707.96 890.277 2703.95 889.849 2668.51 854.047 2626.38 833.57 2577.9 824.217 2576.7 823.943 2575.78 824.179 2573.4 824.549 2567.1 824.584 2562.26 824.484 2556.22 823.816 2491.5 822.093 2436.52 842.176 2391.37 888.663 2390.63 888.804 2389.21 889.28 2388.6 888.972 2387.52 889.784 2387.05 890.904 2386.13 892.994 2381.39 898.644 2377.1 903.324 2372.81 908 2371.73 906.822 2370.64 905.643 2368 902.628Z' fill='#12150D' fill-rule='evenodd'/><path d='M2705 890.683C2708.03 890.601 2711.06 890.52 2715.6 890.175 2717.11 889.912 2716.99 890.052 2717 890 2716.57 892.497 2716.13 895.043 2714.48 899 2710.52 897.169 2707.76 893.928 2705 890.683Z' fill='#1C190F' fill-rule='evenodd'/><path d='M2629 827.979C2626.82 828.123 2623.76 827.54 2620 826.036 2622.24 825.826 2625.19 826.543 2629 827.979Z' fill='#1C190F' fill-rule='evenodd'/><path d='M2592.83 817.199C2593.58 817.892 2591.64 818.001 2591.64 818.001 2591.64 818.001 2589.77 817.452 2589 816.829 2589.56 815.622 2590.84 815.722 2592.83 817.199Z' fill='#1C190F' fill-rule='evenodd'/><path d='M2323 1091C2323.95 1091.68 2324.81 1093.53 2325 1096 2323.86 1095.14 2323.38 1093.66 2323 1091Z' fill='#1C190F' fill-rule='evenodd'/><path d='M2319.52 1020C2320.2 1020.4 2320.13 1021.39 2319.48 1023 2318.85 1022.61 2318.82 1021.6 2319.52 1020Z' fill='#1C190F' fill-rule='evenodd'/><path d='M2704.04 889.683C2707.78 893.629 2710.51 897.056 2714.21 901.02 2754.77 954.204 2771.7 1012.92 2760.74 1078.36 2751.22 1135.19 2721.88 1180.37 2674.22 1215 2656.41 1212.44 2640.86 1210.28 2626.19 1207.39 2752.77 1143.78 2764.76 978.417 2660.52 895.633 2620.9 864.177 2575.15 853.321 2526 854.934 2536.8 843.892 2547.07 833.945 2557.34 824 2562.19 824.1 2567.04 824.199 2574.15 824.485 2576.99 824.56 2577.56 824.45 2578.13 824.344 2626.37 833.216 2668.56 853.761 2704.04 889.683Z' fill='#F4D148' fill-rule='evenodd'/><path d='M2371.66 908.964C2376.39 903.24 2380.69 898.552 2386.31 892.391 2387.92 890.335 2388.23 889.752 2388.54 889.172 2388.54 889.172 2389.97 888.695 2391.7 889.33 2400.11 896.952 2406.79 903.94 2413 912.016 2381.78 945.876 2363.45 984.602 2362.03 1029.39 2361.3 1052.34 2366.37 1075.47 2367.32 1098.46 2356.48 1099.94 2347.14 1101.47 2337.8 1103 2325.85 1068.69 2325.87 1033.7 2332.29 996.213 2332.95 992.609 2333.1 991.168 2333.24 989.73 2335.6 982.502 2337.96 975.274 2340.93 966.166 2341.79 963.787 2342.28 963.262 2342.23 962.799 2342.12 961.859 2341.73 960.949 2341.45 960.026 2351.37 943.353 2361.3 926.677 2371.66 908.964Z' fill='#F4D148' fill-rule='evenodd'/><path d='M2518.42 1256C2459.45 1249.16 2412.58 1220.89 2376 1173.88 2384.32 1166.22 2391.94 1160.31 2400.58 1155 2432.73 1194.14 2473.41 1216 2522 1225.55 2520.83 1236.65 2519.63 1246.33 2518.42 1256Z' fill='#F4D148' fill-rule='evenodd'/><path d='M2520.01 1256.96C2519.87 1246.64 2521.08 1236.86 2523.94 1225.51 2560.17 1227.38 2593.32 1221.82 2625.17 1208 2640.72 1210.17 2656.28 1212.33 2673 1215.21 2629.04 1251.41 2577.12 1261.58 2520.01 1256.96Z' fill='#F4F4F3' fill-rule='evenodd'/><path d='M2400 1154.55C2392.29 1160.47 2384.58 1166.39 2375.86 1173 2362.57 1151.22 2350.3 1128.75 2338 1105.03 2347.39 1102.25 2356.79 1100.72 2368.68 1100 2380.77 1118.72 2390.39 1136.64 2400 1154.55Z' fill='#F4F4F3' fill-rule='evenodd'/><path d='M2341.52 962.09C2342.34 961.736 2342.86 962.488 2343 963.265 2343.06 963.647 2342.42 964.081 2341.38 965 2340.79 964.742 2340.93 963.976 2341.52 962.09Z' fill='#1C190F' fill-rule='evenodd'/><path d='M2332.68 991C2333.2 991.612 2333.08 992.949 2332.32 995.001 2331.79 994.386 2331.92 993.054 2332.68 991Z' fill='#1C190F' fill-rule='evenodd'/><path d='M2413.95 911C2407.3 904.044 2400.64 897.092 2393 889.367 2436.39 842.401 2491.33 822.384 2556 824.101 2546.94 834.547 2536.69 844.429 2524.83 855.906 2480.99 863.586 2445.07 882.439 2413.95 911Z' fill='#F4F4F3' fill-rule='evenodd'/><path d='M2578 824.157C2577.75 825.003 2577.24 825.154 2576 824.867 2576.1 824.105 2576.92 823.781 2578 824.157Z' fill='#1C190F' fill-rule='evenodd'/><path d='M2387.92 889C2388.14 890.043 2387.92 890.727 2387.1 892 2386.82 891.271 2387.15 889.954 2387.92 889Z' fill='#1C190F' fill-rule='evenodd'/><path d='M2413.02 911.99C2444.73 882.154 2480.77 863.177 2524.24 856.543 2575.1 853.323 2620.93 864.178 2660.61 895.632 2765.03 978.413 2753.03 1143.76 2626.22 1207.37 2593.46 1221.85 2560.26 1227.37 2523.94 1224.08 2473.52 1216.05 2432.7 1194.09 2400.44 1154.77 2389.88 1136.21 2380.34 1118.25 2369.83 1099.53 2366.42 1075.69 2361.34 1052.53 2362.07 1029.55 2363.49 984.689 2381.81 945.903 2413.02 911.99M2522 1212.22C2549.62 1215.17 2576.89 1214.93 2605.34 1203.26 2694.51 1169.08 2740.33 1075.81 2711.45 987.236 2683.51 901.548 2588.18 848.163 2504.34 872.692 2471.08 881.044 2442.34 896.911 2417.76 924.54 2376.32 973.789 2361.01 1028.65 2381.61 1093.67 2391.61 1111.87 2401.61 1130.08 2412.57 1150.51 2440.7 1183.89 2475.6 1205.32 2522 1212.22Z' fill='#1C190F' fill-rule='evenodd'/><path d='M2507.77 873.07C2588.48 848.325 2683.56 901.755 2711.43 987.517 2740.23 1076.16 2694.53 1169.52 2603.36 1203 2562.81 1187.83 2528.69 1166.83 2508.86 1129.97 2463.1 1044.94 2444.25 958.956 2507.77 873.07Z' fill='#FCD64A' fill-rule='evenodd'/><path d='M2505.84 873C2443.56 958.806 2462.47 1044.62 2508.4 1129.47 2528.3 1166.25 2562.54 1187.21 2602 1202.35 2577 1214.73 2549.71 1214.97 2520.8 1209.87 2512.3 1151.98 2461.81 1124.13 2411.56 1148.16 2401.55 1129.98 2391.54 1111.79 2383 1092.26 2406.24 1084.4 2422.51 1070.65 2429.37 1049.48 2443.26 1006.58 2439.67 964.227 2419.89 923.458 2442.32 897.091 2471.08 881.243 2505.84 873Z' fill='#FCFCF8' fill-rule='evenodd'/><path d='M2419.05 924C2440.02 964.158 2443.63 1006.51 2429.66 1049.42 2422.77 1070.59 2406.42 1084.34 2383.2 1091 2360.87 1028.6 2376.26 973.809 2419.05 924Z' fill='#FAD64A' fill-rule='evenodd'/><path d='M2412 1149.4C2462 1123.96 2512.71 1152.14 2520 1210 2475.87 1205.91 2440.77 1184.26 2412 1149.4Z' fill='#FAD64A' fill-rule='evenodd'/></g></svg>\"},",
+                "        {\"Fall\", 3, \"data:image/svg+xml;utf8,<svg width='678' height='853' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' overflow='hidden'><defs><clipPath id='clip0'><rect x='3018' y='706' width='678' height='853'/></clipPath></defs><g clip-path='url(#clip0)' transform='translate(-3018 -706)'><path d='M3665.89 896.786C3674.24 895.159 3682.58 893.535 3696 890.922 3688.39 904.104 3683.44 912.696 3677.17 923.094 3659.54 950.158 3643.21 975.413 3625.99 1002.07 3636.8 1006.29 3646.18 1009.95 3655.56 1013.61 3667.42 1019.06 3679.3 1024.48 3691.1 1030.06 3691.8 1030.39 3691.85 1032.08 3693.22 1036.15 3660.25 1048.95 3627.1 1061.81 3591.65 1075.42 3569.89 1083.7 3550.44 1091.25 3528.06 1099.93 3563.91 1122.62 3597.03 1143.59 3630.15 1164.56 3629.63 1166.46 3629.11 1168.36 3628.6 1170.26 3603.85 1180.76 3579.1 1191.27 3552.75 1202.45 3560.94 1215.98 3567.94 1227.55 3574.95 1239.12 3578.7 1247.37 3582.46 1255.61 3585.84 1266.14 3583.26 1269.55 3581.04 1270.68 3578 1271 3571.38 1260.4 3565.59 1250.61 3559.55 1239.54 3554.29 1228.6 3549.8 1218.64 3544.1 1209.41 3538.03 1199.59 3539.91 1194.22 3550.77 1190.11 3569.73 1182.94 3588.32 1174.8 3610.3 1165.74 3590.44 1153.11 3573.72 1142.45 3556.97 1131.83 3540.56 1121.4 3524.12 1111.01 3503.47 1097.94 3533.01 1085.68 3556.52 1075.92 3581.29 1066.13 3611.09 1055.51 3639.62 1044.92 3672.1 1032.87 3659.51 1028.19 3650.76 1024.93 3641.04 1021.01 3630.47 1016.08 3620.86 1011.82 3609.61 1006.83 3630.42 974.199 3649.81 943.806 3669.19 913.412 3636.7 922.433 3606.33 933.508 3576.48 945.811 3563.09 951.331 3558.14 948.576 3556.88 934.072 3555.44 917.36 3551.94 900.831 3548.81 880.944 3532.89 895.658 3519.27 908.232 3504.32 921.357 3482.27 939.458 3461.55 957.013 3440.83 974.567 3438.98 973.164 3437.13 971.764 3435.29 970.364 3449.1 918.399 3462.92 866.437 3477.48 811.644 3462.53 817.436 3450.19 820.71 3439.4 826.763 3424.77 834.97 3418.78 829.336 3412.4 816.136 3398.55 787.499 3383.12 759.63 3366.96 728.82 3352.59 757.525 3339.57 783.527 3325.66 810.368 3310.47 837.598 3315.6 834.013 3289.31 824.37 3279.58 820.803 3269.91 817.075 3257.56 812.421 3272.26 867.719 3286 919.4 3299.73 971.083 3297.55 972.321 3295.37 973.559 3293.19 974.797 3257.97 944.387 3222.76 913.976 3185.58 881.873 3182.49 902.065 3179.37 918.846 3177.51 935.764 3176.15 948.198 3171.85 951.358 3159.75 946.364 3138.14 937.456 3115.97 929.907 3093.23 921.195 3083.77 917.057 3075.12 913.515 3066.47 909.969 3065.69 910.891 3064.91 911.812 3064.13 912.737 3069.75 920.737 3075.37 928.734 3081.4 937.848 3093.86 957.742 3105.66 976.689 3118.08 995.224 3124.11 1004.23 3122.68 1009.49 3112.51 1013.3 3097.14 1019.06 3081.98 1025.37 3063.71 1032.66 3119.95 1054.32 3172.93 1074.73 3225.9 1095.14 3226.05 1097.03 3226.19 1098.91 3226.34 1100.79 3193.01 1121.92 3159.68 1143.05 3124.75 1165.19 3137.9 1171.39 3148.58 1176.41 3159.08 1183.02 3158.41 1186.65 3157.92 1188.7 3156.3 1190.67 3150.43 1188.25 3145.71 1185.92 3141.54 1183.21 3141.56 1182.94 3141.04 1183.06 3139.28 1183.12 3127.18 1178.82 3116.33 1174.6 3105.47 1170.38 3105.2 1168.44 3104.93 1166.5 3104.65 1164.56 3137.73 1143.61 3170.8 1122.66 3206.61 1099.98 3148.98 1077.79 3095.1 1057.04 3041.22 1036.3 3041.15 1034.25 3041.08 1032.2 3041 1030.15 3063.03 1020.86 3085.05 1011.57 3108.7 1001.6 3096.15 982.928 3084.43 965.505 3072.72 948.084 3062.15 930.485 3051.59 912.885 3041.02 895.286 3042.17 893.683 3043.33 892.081 3044.48 890.474 3063.16 897.209 3081.83 903.943 3102.65 911.637 3124.49 920.198 3144.18 927.795 3165.17 935.895 3169.31 911.093 3173.18 887.874 3177.88 859.665 3213.65 890.725 3245.47 918.361 3277.28 945.996 3278.49 945.081 3279.7 944.167 3280.91 943.255 3268.73 899.234 3256.54 855.211 3244.36 811.19 3244.36 806.856 3244.36 802.523 3244.36 795.579 3254.3 798.87 3262.59 801.618 3272.95 805.426 3285.35 810.406 3295.7 814.327 3307.49 818.791 3309.83 813.825 3311.86 809.518 3313.89 805.212 3330.93 773.735 3347.97 742.258 3367.59 706 3388.76 746.168 3407.72 782.175 3427.08 818.908 3448.14 810.812 3468.08 803.149 3493.67 793.312 3479.86 845.849 3467.46 893.054 3455.05 940.263 3456.57 941.212 3458.09 942.158 3459.61 943.104 3463.74 939.888 3468.02 936.847 3471.96 933.422 3495.76 912.758 3519.28 891.764 3543.46 871.565 3546.97 868.631 3553.54 869.367 3559.23 870.695 3562.81 893.511 3565.85 914.038 3569.26 937.03 3603.24 922.88 3634.56 909.835 3665.89 896.786M3458.26 943.41C3457.57 942.952 3456.88 942.492 3456.2 942.034 3456.31 943.066 3456.43 944.098 3458.26 943.41Z' fill='#1A140E' fill-rule='evenodd'/><path d='M3141.44 1183.71C3146.16 1186.03 3150.88 1188.36 3156.83 1190.73 3158.05 1190.77 3158.25 1190.7 3158.71 1191.51 3160.37 1192.59 3161.56 1192.87 3163.66 1193.94 3169.83 1197.22 3175.08 1199.72 3181.7 1202.87 3176.12 1212.17 3171.37 1220.08 3166.62 1228 3126.6 1224.68 3091.15 1210.95 3061.79 1182.73 3022.75 1145.19 3007.99 1099.55 3024.95 1048.38 3036.3 1014.12 3055.62 982.511 3072.31 949 3084.94 965.699 3096.65 983.116 3109.19 1001.78 3085.56 1011.75 3063.56 1021.03 3041.55 1030.32 3041.63 1032.37 3041.7 1034.42 3041.77 1036.46 3095.6 1057.2 3149.43 1077.95 3207 1100.13 3171.23 1122.8 3138.18 1143.74 3105.14 1164.67 3105.42 1166.62 3105.69 1168.56 3105.96 1170.49 3116.81 1174.72 3127.65 1178.94 3140 1183.17 3141.49 1183.18 3141.44 1183.71 3141.44 1183.71Z' fill='#F49C42' fill-rule='evenodd'/><path d='M3165.94 1229.03C3170.88 1219.99 3175.63 1212.1 3181.22 1202.83 3174.6 1199.69 3169.34 1197.2 3162.7 1193.08 3160.13 1191.21 3158.94 1190.95 3157.76 1190.69 3157.76 1190.69 3157.56 1190.76 3157.48 1190.81 3157.87 1188.81 3158.36 1186.76 3160.31 1183.32 3195.91 1195 3195.91 1195 3180.97 1227.75 3170.13 1247 3160.11 1265.49 3150.08 1283.97 3179.84 1274.59 3206.71 1263.44 3233.01 1251.11 3243.91 1246 3249.4 1248.1 3253.99 1258.88 3258.78 1270.13 3265.11 1280.72 3271.88 1293.74 3303.87 1247.47 3334.48 1203.22 3367.13 1156 3399.85 1203.41 3430.47 1247.79 3462.37 1294.01 3468.54 1281.95 3474.5 1272.33 3478.52 1261.96 3483.83 1248.21 3490.63 1245.75 3504.31 1252.44 3529.69 1264.85 3556.07 1275.22 3584.57 1287.55 3581.64 1280 3580.02 1275.84 3578.4 1271.67 3580.62 1270.53 3582.83 1269.41 3585.62 1267.11 3592.79 1278.01 3599.4 1290.07 3606 1302.14 3604.51 1303.87 3603.02 1305.6 3601.53 1307.32 3565.95 1291.96 3530.37 1276.6 3492.89 1260.42 3483.78 1277.51 3474.69 1294.6 3463.48 1315.65 3433.01 1271.48 3405.16 1231.1 3377.31 1190.73 3375.4 1191.12 3373.5 1191.52 3371.6 1191.92 3371.6 1251.21 3371.6 1310.5 3371.6 1369.79 3369.4 1369.86 3367.19 1369.93 3364.98 1370 3357.18 1356.73 3362.53 1341.44 3361.61 1327.24 3360.62 1311.89 3361.39 1296.44 3361.39 1281.03 3361.39 1266.19 3361.39 1251.36 3361.39 1236.52 3361.39 1221.25 3361.39 1205.98 3361.39 1190.71 3360.28 1190.14 3359.18 1189.56 3358.07 1188.99 3329.75 1230 3301.42 1271 3270.69 1315.48 3259.58 1294.7 3250.63 1277.96 3241.24 1260.39 3204.41 1276.31 3168.66 1291.76 3132.91 1307.21 3131.27 1305.7 3129.64 1304.19 3128 1302.69 3140.58 1278.52 3153.16 1254.34 3165.94 1229.03Z' fill='#191818' fill-rule='evenodd'/><path d='M3243.25 812C3256.64 855.626 3268.82 899.451 3281 943.271 3279.79 944.179 3278.58 945.089 3277.37 946 3245.56 918.49 3213.75 890.98 3177.99 860.06 3173.29 888.141 3169.42 911.256 3165.28 935.945 3144.29 927.881 3124.61 920.319 3104 911.851 3140.96 866.267 3186.68 832.515 3243.25 812Z' fill='#F49C42' fill-rule='evenodd'/><path d='M3575.97 1239C3567.63 1227.6 3560.67 1216.01 3552.54 1202.47 3578.73 1191.27 3603.32 1180.76 3627.91 1170.24 3628.42 1168.33 3628.93 1166.43 3629.45 1164.53 3596.54 1143.54 3563.62 1122.54 3528 1099.82 3550.24 1091.13 3569.57 1083.58 3590.1 1076 3603.08 1096.66 3616.54 1116.58 3626.34 1138.19 3651.45 1193.63 3636.6 1222.96 3575.97 1239Z' fill='#F49C42' fill-rule='evenodd'/><path d='M3665 895.274C3634.25 909.718 3603.14 922.805 3569.4 937 3566.01 913.934 3562.99 893.342 3560 871.243 3604.05 853.242 3640.55 861.682 3665 895.274Z' fill='#F49C42' fill-rule='evenodd'/><path d='M3533.62 1475.47C3535.91 1461.36 3544.31 1463.44 3553.42 1465.73 3555.62 1494.12 3557.81 1522.32 3560 1550.51 3558.59 1551.64 3557.19 1552.76 3555.79 1553.89 3552.82 1550.29 3547.68 1546.92 3547.26 1543.04 3545.22 1524.19 3544.45 1505.21 3539.75 1485.75 3532.33 1505.01 3525.1 1524.35 3517.31 1543.45 3515.88 1546.96 3512.18 1549.55 3509.53 1552.56 3507.41 1549.53 3504.58 1546.79 3503.31 1543.44 3498.29 1530.14 3494.09 1516.53 3488.86 1503.32 3486.83 1498.17 3482.88 1493.79 3477.57 1485.61 3475.4 1510.77 3473.66 1531.07 3471.91 1551.37 3470.78 1552.25 3469.64 1553.12 3468.51 1554 3466.58 1550.78 3462.7 1547.36 3463.02 1544.38 3465.82 1518.1 3469.38 1491.91 3472.71 1465.65 3483.9 1461.91 3490.15 1464.04 3493.3 1477.1 3497.51 1494.54 3504.52 1511.3 3511.82 1532.72 3520.03 1511.34 3526.67 1494.04 3533.62 1475.47Z' fill='#191818' fill-rule='evenodd'/><path d='M3619.61 1501.25C3616.63 1496.95 3614.37 1493.81 3609.18 1486.64 3609.18 1502.97 3610.05 1515.1 3608.9 1527.04 3607.99 1536.41 3615.07 1549.23 3599 1559 3599 1525.55 3599 1497.2 3599 1464 3605.98 1468.2 3612.67 1470.13 3615.98 1474.57 3628.55 1491.4 3640.02 1509.05 3654.61 1530.34 3654.61 1510.5 3654.16 1494.66 3654.9 1478.86 3655.1 1474.6 3658.92 1470.51 3661.08 1466.33 3662.73 1470.38 3665.74 1474.41 3665.81 1478.48 3666.26 1503.47 3666.04 1528.46 3663.68 1555.08 3644.12 1541.76 3634.23 1520.32 3619.61 1501.25Z' fill='#1C1C1C' fill-rule='evenodd'/><path d='M3054 1546.9C3064.8 1521.08 3074.92 1496.27 3085.63 1471.71 3087.09 1468.35 3091.27 1464.47 3094.61 1464.05 3098.02 1463.61 3104.11 1466.25 3105.32 1469.08 3116.66 1495.7 3127.2 1522.65 3138 1549.59 3126.31 1555.08 3121.34 1550.79 3120.27 1540.81 3118.27 1522.37 3105.29 1523.95 3091.45 1523.24 3077.27 1522.51 3072.31 1528.43 3069.35 1540.63 3066.13 1553.89 3065.3 1553.69 3054 1546.9M3101.69 1490.66C3099.73 1485.98 3097.77 1481.31 3094.63 1473.79 3088.7 1488.7 3084.03 1500.48 3078.91 1513.36 3090.39 1513.36 3099.39 1513.36 3110.35 1513.36 3107.52 1505.7 3105.2 1499.42 3101.69 1490.66Z' fill='#1C1C1C' fill-rule='evenodd'/><path d='M3232.02 1529.18C3223.67 1551.54 3211.74 1559.25 3191.68 1556.45 3173.63 1553.94 3164.36 1543.38 3162.97 1521.84 3161.94 1505.85 3162.22 1489.76 3162 1473.72 3161.97 1471.51 3162.44 1469.29 3167.01 1464.28 3169.77 1468.15 3174.6 1471.88 3174.9 1475.93 3175.75 1487.88 3174.41 1499.98 3174.67 1512 3175.22 1537.52 3181.62 1546.76 3197.92 1546.78 3215.23 1546.8 3221.6 1537.49 3221.87 1511 3221.99 1498.97 3220.9 1486.89 3221.67 1474.92 3221.91 1471.14 3226.39 1467.63 3228.93 1464 3230.95 1464.92 3232.97 1465.84 3235 1466.75 3234.1 1487.1 3233.2 1507.45 3232.02 1529.18Z' fill='#242424' fill-rule='evenodd'/><path d='M3428 1505.19C3426.82 1515.75 3426.85 1525.13 3424.21 1533.71 3419.25 1549.84 3406.1 1557.14 3387.68 1555.86 3371.2 1554.72 3359.62 1546.6 3357.7 1530.26 3355.25 1509.44 3355.13 1488.34 3354 1467.37 3355.83 1466.25 3357.65 1465.14 3359.47 1464.03 3362.45 1467.67 3367.76 1471.16 3368.01 1474.98 3369.06 1490.92 3367.97 1506.99 3368.88 1522.94 3369.63 1536.19 3375.45 1545.82 3391.11 1546.12 3406.35 1546.41 3413.7 1538.36 3414.55 1524.44 3415.53 1508.5 3414.81 1492.47 3415.84 1476.54 3416.12 1472.24 3420.08 1468.18 3422.34 1464 3424.23 1464.78 3426.11 1465.56 3428 1466.34 3428 1478.78 3428 1491.21 3428 1505.19Z' fill='#1C1C1C' fill-rule='evenodd'/><path d='M3655.99 1013C3646.11 1010.48 3636.77 1006.79 3626 1002.53 3643.16 975.639 3659.42 950.161 3676.65 924 3684.27 956.164 3672.29 984.462 3655.99 1013Z' fill='#F49C42' fill-rule='evenodd'/><path d='M3323.98 1464.56C3324.16 1467.77 3323.07 1472.98 3321.03 1473.38 3315.06 1474.54 3308.71 1473.79 3300.81 1473.79 3300.81 1497.2 3301.09 1519.34 3300.55 1541.46 3300.45 1545.35 3296.91 1549.15 3294.96 1553 3292.92 1549.26 3289.2 1545.56 3289.11 1541.77 3288.54 1519.62 3288.83 1497.45 3288.83 1473.11 3278.55 1473.11 3269.9 1473.11 3261.25 1473.11 3261.17 1471.26 3261.08 1469.41 3261 1467.56 3280.8 1460.71 3301.93 1466.14 3323.98 1464.56Z' fill='#12150D' fill-rule='evenodd'/><path d='M3312 805.101C3311.53 809.688 3309.51 814.012 3307.17 819 3295.39 814.517 3285.05 810.579 3274 805.823 3285.67 804.949 3298.06 804.893 3312 805.101Z' fill='#F49C42' fill-rule='evenodd'/><path d='M3181.92 1227C3196.03 1194.94 3196.03 1194.94 3160.65 1181.66 3148.7 1176.45 3138.04 1171.43 3124.92 1165.24 3159.78 1143.11 3193.04 1121.99 3226.31 1100.87 3226.16 1098.98 3226.02 1097.1 3225.87 1095.22 3173 1074.82 3120.13 1054.42 3064 1032.77 3082.23 1025.49 3097.36 1019.17 3112.7 1013.42 3122.85 1009.61 3124.28 1004.35 3118.26 995.35 3105.86 976.824 3094.08 957.886 3082.55 936.868 3086.8 930.395 3090.53 926.173 3094.26 921.948 3116.15 930.065 3138.28 937.611 3159.85 946.514 3171.93 951.506 3176.22 948.346 3177.58 935.919 3179.43 919.009 3182.54 902.237 3185.63 882.054 3222.73 914.141 3257.88 944.538 3293.03 974.934 3295.21 973.696 3297.38 972.459 3299.56 971.221 3285.85 919.563 3272.14 867.908 3257.47 812.636 3269.79 817.287 3279.44 821.014 3289.15 824.579 3315.4 834.218 3310.27 837.8 3326.73 811 3371.05 825.218 3401.44 853.318 3407.33 897.637 3412.69 937.961 3413.64 979.912 3409.13 1020.32 3395.21 1145.11 3308.74 1220.14 3181.92 1227Z' fill='#F69C41' fill-rule='evenodd'/><path d='M3180.92 1227.58C3308.81 1219.94 3395.45 1144.93 3409.4 1020.17 3413.92 979.773 3412.97 937.833 3407.6 897.519 3401.7 853.211 3371.24 825.118 3327.73 810.065 3339.45 783.667 3352.47 757.684 3366.84 729 3383 759.787 3398.43 787.636 3412.28 816.251 3418.66 829.442 3424.66 835.071 3439.28 826.871 3450.07 820.822 3462.42 817.551 3477.37 811.763 3462.81 866.515 3448.99 918.439 3435.17 970.366 3437.02 971.765 3438.87 973.164 3440.72 974.566 3461.44 957.024 3482.16 939.483 3503.67 923.185 3497.26 977.082 3513.56 1004.37 3564.02 1019.77 3581.2 1025.02 3599.68 1026.83 3617.72 1028.12 3625.58 1028.68 3633.83 1023.96 3641.9 1021.64 3650.66 1024.9 3659.41 1028.15 3672 1032.83 3639.52 1044.87 3610.98 1055.45 3580.63 1064.92 3560.71 1051.19 3544.15 1034.84 3524.22 1026.62 3462.84 1001.33 3404.41 1050.37 3415.46 1117.72 3424.04 1169.98 3455.19 1208.15 3500.67 1233.77 3518.42 1243.76 3538.8 1248.94 3559.69 1240.63 3565.49 1250.41 3571.28 1260.18 3577.89 1270.78 3580.34 1275.78 3581.96 1279.96 3584.89 1287.52 3556.36 1275.17 3529.96 1264.77 3504.56 1252.33 3490.86 1245.62 3484.06 1248.08 3478.74 1261.87 3474.72 1272.26 3468.75 1281.91 3462.58 1294 3430.65 1247.66 3400 1203.18 3367.25 1155.66 3334.57 1202.99 3303.93 1247.35 3271.91 1293.72 3265.13 1280.68 3258.8 1270.06 3254 1258.79 3249.4 1247.98 3243.91 1245.87 3233 1250.99 3206.68 1263.36 3179.78 1274.53 3150 1283.93 3160.03 1265.41 3170.07 1246.88 3180.92 1227.58Z' fill='#F9F8F6' fill-rule='evenodd'/><path d='M3559.28 1239.9C3538.64 1249.52 3518.27 1244.33 3500.53 1234.32 3455.06 1208.65 3423.93 1170.41 3415.35 1118.04 3404.3 1050.57 3462.72 1001.43 3524.06 1026.78 3543.98 1035.01 3560.54 1051.39 3579.19 1065.19 3556.25 1076.09 3532.75 1085.86 3503.21 1098.13 3523.86 1111.23 3540.29 1121.63 3556.7 1132.06 3573.43 1142.7 3590.15 1153.37 3610 1166.02 3588.04 1175.09 3569.45 1183.24 3550.49 1190.42 3539.64 1194.53 3537.76 1199.91 3543.83 1209.74 3549.53 1218.97 3554.01 1228.95 3559.28 1239.9Z' fill='#F69C41' fill-rule='evenodd'/><path d='M3640.84 1020.82C3633.72 1023.8 3625.48 1028.51 3617.6 1027.95 3599.56 1026.67 3581.07 1024.86 3563.88 1019.62 3513.4 1004.23 3497.09 976.973 3504.83 922.585 3519 908.24 3532.62 895.688 3548.55 881 3551.68 900.852 3555.19 917.353 3556.63 934.035 3557.89 948.514 3562.84 951.264 3576.24 945.753 3606.11 933.472 3636.49 922.417 3669 913.411 3649.61 943.752 3630.22 974.092 3609.39 1006.66 3620.65 1011.65 3630.26 1015.9 3640.84 1020.82Z' fill='#F49C42' fill-rule='evenodd'/><path d='M3093 921.388C3090.07 926.276 3086.35 930.561 3081.71 936 3075.2 929.036 3069.6 920.924 3064 912.809 3064.78 911.87 3065.55 910.935 3066.33 910 3074.95 913.597 3083.58 917.191 3093 921.388Z' fill='#E2E2E2' fill-rule='evenodd'/><path d='M3141 1183.27C3141.35 1183.06 3142.04 1182.67 3142 1183.53 3141.27 1184.79 3141.34 1183.1 3141 1183.27Z' fill='#1C190F' fill-rule='evenodd'/><path d='M3456.98 944C3456.19 943.846 3456.09 942.923 3456 942 3456.56 942.409 3457.12 942.821 3456.98 944Z' fill='#FEFEFE' fill-rule='evenodd'/><path d='M3158 1191.41C3158.81 1190.6 3160.14 1190.98 3162 1192.59 3161.19 1193.41 3159.86 1193 3158 1191.41Z' fill='#1C190F' fill-rule='evenodd'/><path d='M3102.05 1482.31C3104.92 1489.91 3107.21 1496.27 3110 1504 3099.2 1504 3090.32 1504 3079 1504 3084.04 1490.98 3088.65 1479.08 3094.5 1464 3097.6 1471.6 3099.53 1476.33 3102.05 1482.31Z' fill='#E2E2E2' fill-rule='evenodd'/></g></svg>\"},",
+                "        {\"Winter\", 4, \"data:image/svg+xml;utf8,<svg width='628' height='847' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' overflow='hidden'><defs><clipPath id='clip0'><rect x='707' y='710' width='628' height='847'/></clipPath></defs><g clip-path='url(#clip0)' transform='translate(-707 -710)'><path d='M988.642 877.184C992.806 853.281 984.965 831.679 973.519 811.84 961.063 790.257 962.024 770.566 973.968 749.465 981.02 737.003 985.72 723.201 991.478 710 993.576 710.007 995.673 710.01 997.774 710.014 1007.5 733.332 1018.06 756.354 1026.3 780.185 1028.18 785.599 1022.41 794.005 1019.42 800.705 1007.79 826.787 995.347 852.618 1000.22 882.568 1000.74 885.771 1001.16 888.993 1002.23 896.346 1018.87 883.981 1033 873.079 1047.63 862.88 1051.21 860.384 1056.39 860.181 1060.83 858.923 1058.59 863.275 1057.38 868.868 1053.91 871.749 1042.51 881.22 1030.3 889.704 1016.6 899.894 1000.52 908.512 997.081 919.833 1002.49 936.963 1012.82 928.86 1022 921.658 1031.19 914.453 1034.39 916.821 1037.6 919.19 1039.5 923.075 1030.42 930.369 1023.13 937.035 1014.74 941.735 1000.55 949.69 997.311 960.776 1001.49 974.833 1007.94 973.644 1013.72 972.575 1019.5 971.509 1020.69 973.149 1021.89 974.789 1023.08 976.428 999.522 987.756 996.319 1005.95 1001.67 1026.68 1028.11 1025.4 1033.48 1003.82 1039.92 983.27 1041.26 984.136 1042.59 985.002 1043.93 985.868 1044.92 991.376 1045.92 996.883 1047.83 1007.48 1056.59 997.739 1065.08 991.977 1068 984.136 1071.64 974.338 1070.71 962.832 1071.76 952.062 1073.21 947.517 1074.66 942.972 1076.11 938.424 1078.38 938.551 1080.66 938.675 1082.93 938.799 1082.93 945.128 1081.94 951.663 1083.2 957.727 1084.53 964.077 1086.92 974.249 1090.77 975.242 1100.78 977.821 1103.32 969.436 1104.14 960.453 1105.75 942.835 1107.98 925.261 1110.38 907.732 1111.14 902.139 1113.27 896.734 1117.37 891.654 1125.74 914.941 1114.6 937.644 1116.99 963.403 1130.36 955.637 1142.73 948.455 1157.01 939.992 1163.14 933.336 1168.32 928.465 1171.46 922.507 1188.74 889.67 1215.05 873.385 1252.6 875.548 1261.49 876.06 1270.52 874.042 1279.49 873.19 1280.33 875.111 1281.16 877.036 1282 878.961 1267.3 898.336 1252.98 918.035 1237.54 936.801 1234.61 940.36 1227.3 940.803 1221.85 941.704 1202.8 944.853 1183.68 947.575 1164.59 950.463 1150.71 957.896 1136.82 965.328 1120.95 973.829 1144.82 984.727 1165.89 994.339 1186.95 1003.95 1186.15 1006.25 1185.36 1008.54 1184.56 1010.84 1178.79 1009.52 1172.78 1008.8 1167.27 1006.78 1146.67 999.21 1126.24 991.214 1103.6 984.566 1097.36 988.392 1093.25 991.025 1085.65 995.903 1099.62 1000.43 1110.08 1003.83 1120.55 1007.22 1120.55 1007.22 1120.53 1007.16 1120.84 1008.45 1122.07 1012.7 1122.99 1015.66 1123.92 1018.62 1120.82 1018.95 1117.35 1020.33 1114.7 1019.4 1106.65 1016.57 1098.45 1013.61 1091.14 1009.3 1076.62 1000.75 1064.52 1002.66 1053.25 1015.62 1056.23 1017.16 1059.17 1017.96 1061.03 1019.84 1063.09 1021.93 1064.16 1025.01 1065.66 1027.66 1062.26 1028.27 1057.71 1030.61 1055.62 1029.23 1035.7 1016.03 1023.27 1031.92 1008.58 1039.65 1024.38 1059.71 1044.49 1058.97 1066.45 1050.39 1066.71 1052.21 1066.97 1054.04 1067.23 1055.86 1062.78 1059.73 1058.33 1063.6 1054.16 1067.24 1066.19 1080.57 1078.73 1079.19 1092.82 1071.8 1102.46 1066.74 1113.27 1063.93 1123.56 1060.12 1124.68 1062.76 1125.79 1065.4 1126.91 1068.03 1114.34 1074.1 1101.79 1080.17 1088.2 1086.73 1099.57 1097.11 1109.41 1101.99 1123.79 1093.91 1138.63 1085.58 1154.93 1079.75 1170.82 1073.42 1175.08 1071.73 1180.21 1072.2 1184.94 1071.67 1185.6 1073.81 1186.27 1075.94 1186.94 1078.08 1165.88 1087.56 1144.82 1097.04 1123.23 1106.77 1148.64 1128.08 1176.1 1136.98 1206.72 1138.21 1221.74 1138.81 1237.86 1138.95 1246.89 1154.96 1258.35 1171.07 1269.82 1187.19 1281.28 1203.3 1280.68 1204.98 1280.07 1206.66 1279.47 1208.34 1264.2 1206.84 1248.92 1205.34 1230.95 1203.55 1209.29 1204.06 1196.33 1195.31 1186.54 1179.23 1170.22 1152.44 1149.13 1130.72 1117.04 1120.67 1114.99 1143.88 1125.42 1166.94 1116.6 1189.62 1109.94 1168.55 1106.15 1147.4 1104.82 1126.1 1103.87 1110.88 1096.94 1103.42 1081.82 1100.53 1081.82 1114.75 1081.82 1128.58 1081.82 1142.41 1079.64 1142.64 1077.46 1142.87 1075.27 1143.11 1073.32 1130.95 1069.78 1118.8 1069.8 1106.65 1069.84 1090.2 1060.82 1083.59 1047.06 1079.35 1045.97 1085.37 1044.95 1090.99 1043.93 1096.62 1042.33 1097.43 1040.74 1098.25 1039.14 1099.07 1034.35 1076.39 1026.61 1056.63 1001.91 1054.4 993.809 1077.17 1004.18 1093.89 1022.61 1107.91 1021.19 1109.07 1019.76 1110.24 1018.33 1111.39 1012.62 1109.63 1006.9 1107.86 1001.25 1106.12 991.842 1141.52 1031.34 1141.67 1042.34 1165.25 1022.82 1169.49 1016.35 1148.12 1001.53 1146.74 996.951 1161.79 1001.39 1172.41 1015.11 1180.88 1028.67 1189.25 1041.05 1199.6 1053.62 1209.49 1057.39 1212.46 1060.08 1216.82 1063.26 1220.54 1061.65 1222.55 1060.04 1224.55 1058.43 1226.56 1039.84 1213.03 1021.25 1199.51 1002.66 1185.99 1000.84 1186.84 999.021 1187.69 997.201 1188.54 1000.69 1210.03 999.855 1233.52 1008.66 1252.55 1023.18 1283.94 1030.89 1312.77 1010.03 1343.53 1009.45 1344.39 1009.58 1345.74 1009.38 1346.87 1004.95 1355.04 1000.53 1363.21 994.156 1375 988.649 1363.92 984.979 1356.53 980.423 1346.99 959.906 1315.07 960.815 1285.42 979.708 1255.66 982.428 1251.37 985.13 1246.38 985.614 1241.49 987.351 1223.97 988.134 1206.35 989.452 1186.04 964.506 1197.53 950.505 1217.95 926.658 1221.9 928.653 1216.18 931.873 1211.98 935.921 1208.85 949.489 1198.37 962.879 1187.53 977.243 1178.24 989.672 1170.2 990.722 1160.34 986.383 1146.37 974.057 1154.24 962.738 1161.46 951.418 1168.68 950.121 1167.23 948.823 1165.79 947.522 1164.35 949.661 1161.14 951.226 1157.25 954.052 1154.86 961.021 1148.96 968.166 1143.06 975.98 1138.41 989.03 1130.64 991.595 1120.26 986.613 1106.73 980.897 1108.31 975.815 1109.72 970.737 1111.12 969.416 1110.19 968.094 1109.25 966.772 1108.32 983.369 1093.61 996.003 1077.72 986.469 1055.18 961.21 1057.26 954.12 1076.38 950.412 1098.67 948.744 1098.12 947.075 1097.58 945.407 1097.03 943.893 1091.32 942.375 1085.6 940.889 1079.99 925.26 1083.32 918.943 1092.97 918.679 1108.07 918.538 1115.96 916.513 1123.82 915.112 1132.29 914.69 1133.72 914.7 1134.55 914.899 1136.68 912.842 1139.31 910.807 1140.65 908.767 1141.99 907.531 1139.43 906.292 1136.86 905.512 1134.01 906.683 1132.71 906.501 1131.83 905.265 1129.71 906.093 1119.09 907.071 1109.85 908.245 1098.79 892.713 1104.2 883.574 1110.05 883.533 1126.72 883.492 1144.15 880.199 1161.63 877.452 1178.95 876.886 1182.53 872.478 1185.51 869.549 1188.18 868.736 1186.84 868.045 1186.32 866.778 1184.58 868.554 1162.48 870.737 1141.82 872.921 1121.15 871.609 1119.92 870.301 1118.69 868.993 1117.45 852.335 1130.04 835.673 1142.62 818.128 1155.53 816.374 1157.47 815.504 1159.08 814.196 1161.81 800.194 1178.76 792.925 1201.81 767.191 1203.73 747.907 1205.1 728.624 1206.47 709.341 1207.84 708.561 1206.45 707.781 1205.06 707 1203.66 720.458 1185.23 733.915 1166.79 748.969 1146.56 765.926 1142.29 781.284 1139.84 797.379 1137.43 799.131 1137.41 800.021 1137.04 802.202 1135.88 828.244 1136.66 844.672 1117.94 866.205 1109.85 867.259 1109.44 867.609 1109.13 867.959 1108.82 867.372 1108.16 866.789 1107.5 865.213 1106.2 846.419 1097.92 828.522 1090.48 810.913 1082.41 807.979 1081.07 806.309 1076.96 804.054 1074.13 806.786 1073.34 809.518 1072.55 812.614 1071.97 812.978 1072.17 814.576 1072.6 815.819 1072.79 832.25 1079.6 847.453 1086.2 862.621 1092.87 882.177 1101.47 882.417 1101.45 899.405 1086.25 886.76 1079.96 874.304 1073.76 861.852 1067.57 863.04 1065.02 864.227 1062.47 865.415 1059.92 875.938 1064 887.196 1066.84 896.823 1072.46 911.541 1081.08 923.544 1078.84 935.11 1067.42 930.434 1063.33 925.817 1059.3 921.203 1055.27 921.474 1053.56 921.745 1051.86 922.02 1050.16 944.009 1058.89 964.146 1059.77 978.998 1040.65 963.74 1021.23 943.003 1024.39 921.501 1030.89 921.412 1029.12 921.323 1027.34 921.233 1025.56 925.625 1021.98 930.012 1018.4 934.596 1014.66 924.234 1003.66 913.337 1000.29 899.59 1008.47 891.8 1013.11 883.055 1016.33 874.441 1019.31 871.146 1020.45 867.008 1019.15 863.256 1018.96 862.844 1017.11 862.432 1015.25 862.02 1013.39 874.675 1007.38 887.333 1001.36 900.359 995.171 888.398 982.204 876.838 981.152 862.662 988.883 849.176 996.24 834.519 1001.49 820.228 1007.3 815.476 1009.24 810.265 1010.04 805.265 1011.36 804.569 1009.68 803.873 1008 803.177 1006.32 820.323 989.952 845.534 987.312 865.9 973.984 842.619 958.514 820.624 945.155 792.708 944.732 770.532 944.399 748.022 942.463 735.519 919.272 726.227 905.484 716.935 891.695 707.644 877.906 708.214 876.321 708.785 874.736 709.355 873.155 727.306 874.98 745.257 876.806 765.765 879.013 781.714 878.838 790.482 885.579 797.614 896.442 816.25 924.828 837.009 951.047 872.478 961.361 873.731 938.345 863.476 915.243 871.503 892.004 875.986 896.841 877.734 901.902 878.421 907.103 880.439 922.401 883.052 937.723 883.519 953.093 884.01 969.309 891.069 978.488 907.507 981.819 907.507 967.377 907.507 953.292 907.507 939.208 909.639 939.091 911.771 938.971 913.907 938.85 915.606 950.766 918.288 962.639 918.758 974.603 919.369 990.073 926.733 998.671 940.999 1001.94 942.65 996.271 944.298 990.623 945.943 984.978 947.766 984.445 949.585 983.916 951.408 983.386 952.486 1008.04 963.727 1023.25 988.546 1027.6 988.546 1016.63 991.21 1005.01 987.759 995.655 984.601 987.099 974.83 980.987 967.974 973.798 969.34 972.472 970.707 971.144 972.07 969.818 977.333 971.763 982.592 973.706 987.687 975.59 992.545 959.408 986.84 949.256 973.875 941.597 966.054 936.977 958.883 931.102 952.023 925.099 949.836 923.185 949.592 919.042 948.459 915.92 949.568 914.968 950.677 914.016 951.786 913.06 963.535 920.654 975.283 928.245 987.347 936.045 992.195 919.2 987.111 909.197 974.171 901.015 959.73 891.884 946.605 880.684 932.797 870.532 925.882 865.448 922.693 860.683 932.779 855.733 932.779 855.733 933.305 855.956 934.259 857.008 952.349 870.889 969.484 883.726 988.642 898.072 988.642 888.333 988.642 882.76 988.642 877.184M808.466 1148.65C796.779 1149.37 784.847 1148.9 773.493 1151.25 766.191 1152.75 759.741 1158.39 750.879 1163.12 743.345 1173.24 735.811 1183.35 725.67 1196.96 741.357 1194.22 752.476 1192.28 766.353 1190.67 773.737 1186.6 782.14 1183.66 788.244 1178.16 795.65 1171.48 801.115 1162.65 808.667 1154.63 809.027 1154.43 809.691 1154.23 809.692 1154.03 809.695 1153.28 809.482 1152.52 808.466 1148.65M1012.02 789.556C1007.61 771.003 1003.2 752.446 997.929 730.265 971.036 770.442 971.053 791.086 995.454 828.406 1000.79 815.944 1005.89 804.015 1012.02 789.556M1197.63 907.123C1191.26 915.615 1184.89 924.109 1177.69 933.701 1223.42 935.447 1242.3 924.233 1258.57 886.497 1249.55 887.659 1241.15 888.979 1232.7 889.77 1219.68 890.99 1205.8 890.021 1197.63 907.123M974.274 1298.37C980.406 1314.66 986.534 1330.95 992.861 1347.76 1017.63 1315.51 1017.74 1285.28 993.016 1254.09 987.052 1268.17 981.154 1282.09 974.274 1298.37M761.718 890.327C755.033 889.278 748.348 888.23 741.722 887.188 734.578 917.007 761.758 938.17 810.344 932.937 804.192 924.628 798.351 917.007 792.801 909.176 785.774 899.261 779.159 888.914 761.718 890.327M1212.29 1150.41C1201.77 1149.22 1191.25 1148.04 1176.63 1146.41 1186.83 1160.01 1194.86 1170.17 1202.27 1180.76 1211.88 1194.47 1226.46 1191.18 1239.48 1191.11 1241.89 1191.1 1247.81 1178.66 1246 1175.73 1238.91 1164.21 1233.39 1149.07 1212.29 1150.41Z' fill='#0E1617' fill-rule='evenodd'/><path d='M1010.82 1347C1009.42 1345.68 1009.29 1344.33 1009.88 1343.46 1030.8 1312.67 1023.06 1283.8 1008.49 1252.38 999.663 1233.33 1000.5 1209.81 997 1188.29 998.825 1187.44 1000.65 1186.59 1002.47 1185.74 1021.13 1199.28 1039.78 1212.82 1058.44 1226.36 1060.05 1224.35 1061.66 1222.34 1063.28 1220.33 1060.09 1216.61 1057.39 1212.25 1053.61 1209.27 1040.99 1199.37 1028.57 1189.01 1014.96 1180.63 1001.2 1172.15 996.749 1161.51 1001.35 1146.45 1016.21 1147.83 1022.7 1169.22 1042.29 1164.98 1031.26 1141.37 991.623 1141.22 1001.06 1105.78 1006.73 1107.53 1012.47 1109.3 1018.2 1111.06 1019.63 1109.9 1021.06 1108.74 1022.5 1107.58 1004 1093.54 993.596 1076.8 1001.72 1054 1026.51 1056.23 1034.27 1076.02 1039.08 1098.72 1040.68 1097.9 1042.28 1097.09 1043.89 1096.27 1044.9 1090.64 1045.93 1085.01 1047.02 1078.99 1060.83 1083.22 1069.88 1089.85 1069.84 1106.32 1069.82 1118.48 1073.37 1130.65 1075.33 1142.81 1077.52 1142.58 1079.71 1142.34 1081.9 1142.11 1081.9 1128.27 1081.9 1114.42 1081.9 1100.19 1097.07 1103.08 1104.02 1110.55 1104.98 1125.79 1106.31 1147.11 1110.11 1168.29 1116.79 1189.38 1125.64 1166.68 1115.18 1143.59 1117.24 1120.35 1149.44 1130.41 1170.6 1152.15 1186.97 1178.98 1196.79 1195.07 1209.8 1203.83 1230 1203.58 1216.9 1241.03 1190.1 1267.97 1160.36 1292.39 1117.43 1327.64 1068.34 1346.71 1010.82 1347Z' fill='#5FC4CB' fill-rule='evenodd'/><path d='M915.311 1131.55C916.49 1123.67 918.523 1115.81 918.664 1107.91 918.929 1092.81 925.27 1083.16 940.955 1079.83 942.447 1085.43 943.97 1091.15 945.49 1096.87 947.165 1097.42 948.839 1097.96 950.514 1098.51 954.235 1076.21 961.351 1057.08 986.702 1055 996.272 1077.55 983.591 1093.45 966.934 1108.16 968.26 1109.1 969.587 1110.03 970.913 1110.97 976.01 1109.56 981.11 1108.15 986.847 1106.57 991.847 1120.1 989.273 1130.49 976.175 1138.26 968.333 1142.92 961.162 1148.82 954.167 1154.72 951.331 1157.11 949.759 1161 947.613 1164.21 948.919 1165.66 950.221 1167.1 951.524 1168.54 962.885 1161.32 974.246 1154.1 986.616 1146.23 990.972 1160.2 989.917 1170.07 977.443 1178.11 963.026 1187.41 949.587 1198.25 935.969 1208.73 931.906 1211.86 928.674 1216.06 926.672 1221.78 950.607 1217.83 964.659 1197.41 989.697 1185.91 988.373 1206.23 987.588 1223.85 985.844 1241.38 985.358 1246.27 982.647 1251.27 979.917 1255.55 960.955 1285.33 960.042 1314.99 979.818 1346 882.183 1340.32 807.592 1298.81 767 1204.72 792.448 1201.69 799.745 1178.63 814.599 1161.21 816.771 1158.12 817.702 1156.59 818.633 1155.07 835.354 1142.48 852.077 1129.89 868.796 1117.3 870.109 1118.53 871.422 1119.77 872.738 1121 870.546 1141.67 868.355 1162.35 866.601 1185.22 867.593 1188.5 868.462 1188.91 869.643 1188.64 872.293 1185.38 876.718 1182.41 877.286 1178.82 880.043 1161.49 883.348 1144.01 883.389 1126.57 883.43 1109.89 892.603 1104.04 908.192 1098.63 907.014 1109.69 906.032 1118.94 904.888 1130.34 904.733 1132.49 904.991 1134.15 904.991 1134.15 906.231 1136.71 907.475 1139.28 908.716 1141.85 910.763 1140.5 912.806 1139.16 915.253 1135.97 916.045 1133.19 915.931 1132.34 915.311 1131.55Z' fill='#5FC4CA' fill-rule='evenodd'/><path d='M734.164 920C747.777 942.23 770.312 944.172 792.512 944.507 820.457 944.931 842.475 958.336 865.781 973.86 845.393 987.234 820.156 989.884 802.991 1006.31 803.688 1007.99 804.385 1009.68 805.081 1011.37 810.088 1010.04 815.304 1009.24 820.06 1007.29 834.368 1001.46 849.04 996.194 862.54 988.811 876.731 981.053 888.303 982.108 900.278 995.12 887.238 1001.33 874.566 1007.37 861.897 1013.41 862.31 1015.27 862.722 1017.13 863.135 1019 866.891 1019.18 871.033 1020.49 874.332 1019.34 882.956 1016.35 891.709 1013.12 899.508 1008.47 913.269 1000.25 924.178 1003.64 934.551 1014.67 929.962 1018.43 925.57 1022.02 921.174 1025.61 921.263 1027.4 921.353 1029.18 921.442 1030.97 942.968 1024.44 963.727 1021.27 979 1040.75 964.132 1059.94 943.975 1059.06 921.961 1050.3 921.686 1052.01 921.415 1053.71 921.143 1055.42 925.763 1059.47 930.385 1063.52 935.066 1067.62 923.487 1079.08 911.472 1081.33 896.738 1072.68 887.1 1067.04 875.831 1064.19 865.296 1060.09 864.107 1062.65 862.918 1065.21 861.729 1067.77 874.195 1073.99 886.664 1080.21 899.322 1086.52 882.316 1101.77 882.075 1101.79 862.499 1093.16 847.315 1086.47 832.096 1079.85 815.389 1072.58 813.275 1071.43 812.672 1071.43 812.075 1071.99 809.34 1072.77 806.605 1073.56 803.87 1074.35 806.127 1077.19 807.799 1081.32 810.736 1082.67 828.363 1090.76 846.28 1098.23 864.891 1107.31 865.681 1108.73 865.379 1110.31 865.379 1110.31 844.531 1118.32 828.085 1137.1 801.277 1136.04 797.997 1136.38 797.107 1136.9 796.45 1137.82 781.075 1140.29 765.7 1142.75 749.299 1146 726.563 1080.06 711.071 1012.62 725.732 941.916 727.216 934.758 730.577 927.993 734.164 920Z' fill='#5FC4CA' fill-rule='evenodd'/><path d='M1165.25 951.344C1184.05 947.213 1203.22 944.49 1222.32 941.341 1227.79 940.44 1235.11 939.997 1238.05 936.439 1253.54 917.673 1267.89 897.976 1282.63 878.602 1281.79 876.677 1280.95 874.752 1280.12 872.831 1271.12 873.683 1262.07 875.701 1253.15 875.189 1215.5 873.026 1189.12 889.31 1171.79 922.146 1168.65 928.103 1163.46 932.974 1158.2 938.787 1152.99 916.914 1146.73 894.749 1145.15 872.257 1143.39 847.321 1157.66 829.263 1180.78 821.116 1221.09 806.912 1261.77 807.012 1300.99 825.589 1324.04 836.503 1338.28 853.718 1334.35 881.359 1332.02 897.726 1330.86 914.294 1327.78 930.502 1323.4 953.475 1308.68 967.556 1286.37 973.915 1261.35 981.048 1236.14 985.101 1210.19 979.071 1192.46 974.957 1176.4 968.226 1165.25 951.344Z' fill='#62C6CD' fill-rule='evenodd'/><path d='M931.38 854.711C922.253 860.659 925.438 865.436 932.344 870.534 946.134 880.711 959.242 891.94 973.664 901.094 986.587 909.296 991.664 919.326 986.823 936.214 974.774 928.393 963.041 920.784 951.308 913.17 950.201 914.128 949.093 915.083 947.985 916.038 949.117 919.167 949.361 923.32 951.545 925.24 958.395 931.257 965.558 937.147 973.369 941.78 986.316 949.458 992.014 959.636 987.163 975.858 982.074 973.97 976.822 972.023 971.565 970.072 970.204 971.402 968.839 972.733 967.475 974.063 974.322 981.269 984.08 987.397 987.235 995.976 990.681 1005.35 988.02 1017 988.02 1028 963.233 1023.64 952.008 1008.39 950.931 983.675 949.11 984.206 947.293 984.737 945.472 985.271 943.83 990.93 942.184 996.593 940.535 1002.28 926.288 998.998 918.934 990.379 918.324 974.87 917.854 962.876 915.176 950.971 913.479 939.026 911.346 939.147 909.217 939.267 907.087 939.384 907.087 953.505 907.087 967.625 907.087 982.104 890.67 978.764 883.621 969.562 883.131 953.305 882.664 937.895 880.055 922.534 878.039 907.197 877.353 901.983 875.608 896.91 871.13 892.06 863.114 915.359 873.355 938.519 872.104 961.593 836.681 951.254 815.95 924.968 797.339 896.51 790.215 885.619 781.459 878.861 767 878.716 776.182 871.347 785.648 862.414 796.856 858.426 840.662 842.834 885.373 839.822 931.38 854.711Z' fill='#5EC2C8' fill-rule='evenodd'/><path d='M1247.51 1153C1238.19 1138.54 1222.08 1138.4 1207.06 1137.8 1176.46 1136.57 1149.01 1127.7 1123.6 1106.43 1145.19 1096.73 1166.24 1087.27 1187.29 1077.81 1186.62 1075.68 1185.95 1073.55 1185.28 1071.41 1180.56 1071.94 1175.44 1071.47 1171.17 1073.16 1155.29 1079.47 1139 1085.29 1124.17 1093.6 1109.79 1101.66 1099.95 1096.79 1088.59 1086.44 1102.17 1079.89 1114.72 1073.84 1127.28 1067.79 1126.16 1065.16 1125.05 1062.52 1123.94 1059.89 1113.65 1063.69 1102.84 1066.5 1093.21 1071.54 1079.12 1078.92 1066.58 1080.29 1054.56 1066.99 1058.73 1063.36 1063.18 1059.5 1067.62 1055.64 1067.37 1053.82 1067.11 1052 1066.85 1050.18 1044.9 1058.74 1024.79 1059.48 1009 1039.47 1023.68 1031.76 1036.11 1015.91 1056.02 1029.07 1058.11 1030.45 1062.65 1028.12 1066.06 1027.51 1064.56 1024.86 1063.49 1021.79 1061.42 1019.7 1059.57 1017.83 1056.62 1017.03 1053.65 1015.49 1064.92 1002.56 1077.01 1000.66 1091.52 1009.19 1098.84 1013.49 1107.03 1016.44 1115.08 1019.26 1117.73 1020.19 1121.2 1018.81 1124.29 1018.49 1123.37 1015.53 1122.44 1012.58 1121.18 1008.34 1122.97 1007.11 1125.64 1006.33 1127.14 1007.32 1152.82 1024.23 1178.88 1040.62 1203.77 1058.64 1235.06 1081.29 1251.08 1112.03 1247.51 1153Z' fill='#5EC2C8' fill-rule='evenodd'/><path d='M1070.97 951.35C1070.86 962.766 1071.8 974.342 1068.12 984.198 1065.18 992.087 1056.62 997.884 1047.79 1007.68 1045.86 997.022 1044.86 991.482 1043.85 985.941 1042.51 985.07 1041.16 984.198 1039.81 983.327 1033.32 1004 1027.9 1025.71 1001.25 1027 995.855 1006.14 999.085 987.84 1022.84 976.444 1021.64 974.795 1020.43 973.145 1019.23 971.495 1013.4 972.568 1007.57 973.643 1001.07 974.839 996.855 960.698 1000.12 949.544 1014.43 941.541 1022.89 936.814 1030.23 930.108 1039.21 924 1050.23 932.726 1060.12 941.749 1070.97 951.35Z' fill='#5EC2C8' fill-rule='evenodd'/><path d='M755.197 1524.76C751.553 1535.5 748.366 1544.95 745.18 1554.41 743.382 1554.58 741.585 1554.75 739.787 1554.92 729.524 1526.02 719.262 1497.12 709 1468.22 710.331 1466.81 711.662 1465.41 712.993 1464 716.937 1467.63 722.86 1470.54 724.475 1475 730.832 1492.55 735.832 1510.58 742.794 1533.16 750.081 1510.55 755.568 1492.42 761.956 1474.61 763.327 1470.78 767.956 1468.11 771.085 1464.91 773.644 1468.13 777.315 1470.97 778.572 1474.64 784.813 1492.81 790.417 1511.19 797.859 1534.58 803.394 1517.61 806.287 1505.11 811.56 1493.69 816.104 1483.85 810.792 1466.82 833 1464.24 821.597 1496.13 811.217 1525.16 800.837 1554.19 799.006 1554.46 797.175 1554.73 795.344 1555 786.796 1532.31 778.249 1509.63 768.429 1483.56 763.454 1499.11 759.555 1511.29 755.197 1524.76Z' fill='#202020' fill-rule='evenodd'/><path d='M957.547 1538.18C945.703 1521.32 934.593 1505.46 921.311 1486.49 921.311 1501.84 922.037 1513.91 921.09 1525.86 920.297 1535.79 926.23 1548.49 917.285 1555.97 915.189 1555.35 913.093 1554.74 911 1554.12 911 1525.7 911 1497.28 911 1464 918.132 1468.29 924.922 1470.28 928.315 1474.79 940.968 1491.61 952.507 1509.26 967.381 1530.82 967.381 1510.54 966.928 1494.69 967.682 1478.89 967.882 1474.68 971.767 1470.63 973.963 1466.51 975.623 1470.62 978.646 1474.7 978.719 1478.83 979.169 1503.87 978.944 1528.93 978.944 1553.98 977.488 1554.98 976.031 1555.99 974.572 1557 969.141 1551.06 963.714 1545.12 957.547 1538.18Z' fill='#202020' fill-rule='evenodd'/><path d='M1251.9 1542.85C1252.13 1547.29 1251.91 1550.64 1251.7 1554 1248.21 1552.81 1243.5 1552.62 1241.53 1550.18 1238.83 1546.82 1237.99 1541.83 1236.74 1537.43 1231.84 1520.21 1221.24 1512.93 1203.2 1517.55 1201.8 1529.58 1200.49 1541.56 1198.68 1553.45 1198.62 1553.86 1193.58 1553.5 1190 1553.5 1190 1524.52 1190 1496.03 1190 1464.65 1199.25 1464.65 1209.11 1462.92 1218.02 1465.12 1227.68 1467.5 1241.74 1471.57 1244.28 1478.49 1247.47 1487.16 1240.89 1499.47 1237.78 1513.58 1240.67 1519.54 1246.06 1530.66 1251.9 1542.85M1227.16 1503.36C1229.08 1496.37 1234.15 1484.34 1232.4 1483.23 1223.76 1477.76 1213.33 1475.18 1201.71 1470.91 1201.71 1486.08 1201.71 1496.07 1201.71 1507.99 1210.32 1506.68 1217.46 1505.58 1227.16 1503.36Z' fill='#1C1C1C' fill-rule='evenodd'/><path d='M1103 1545.54C1103.13 1530.77 1103.34 1517.58 1103.41 1504.4 1103.48 1491.26 1103.43 1478.11 1103.43 1464 1120.3 1464 1136.73 1464 1153.14 1464 1153.53 1465.75 1153.92 1467.49 1154.3 1469.24 1148.75 1470.51 1143.26 1472.41 1137.64 1472.9 1130.42 1473.54 1123.1 1473.06 1115.23 1473.06 1115.23 1482.67 1115.23 1490.42 1115.23 1499.26 1126.52 1500.26 1137.19 1501.21 1147.87 1502.16 1147.74 1504.47 1147.61 1506.78 1147.49 1509.09 1137.23 1509.55 1126.98 1510.01 1115.77 1510.51 1115.77 1520.78 1115.77 1530.23 1115.77 1541.05 1129.95 1541.05 1143.44 1541.05 1158 1541.05 1157.56 1545.13 1157.19 1550.01 1157.02 1550 1139.01 1549.28 1121.01 1548.2 1103 1545.54Z' fill='#0E1617' fill-rule='evenodd'/><path d='M1060.72 1464C1066.78 1464.58 1071.3 1465.17 1075.83 1465.75 1075.89 1467.79 1075.94 1469.83 1076 1471.87 1067.19 1472.83 1058.37 1473.78 1045.28 1475.2 1045.28 1500.55 1045.3 1526.41 1044.93 1552.27 1044.93 1552.51 1039.7 1552.68 1035.34 1553 1035.34 1526.87 1035.34 1501.34 1035.34 1474.04 1025.12 1474.04 1016.37 1474.04 1007 1474.04 1010.75 1464 1010.75 1464 1060.72 1464Z' fill='#242424' fill-rule='evenodd'/><path d='M859.014 1521.1C859 1501.99 859 1484.55 859 1467.11 860.258 1466.07 861.518 1465.03 862.779 1464 865.426 1467.34 870.26 1470.61 870.368 1474.03 871.12 1497.76 871.192 1521.52 870.633 1545.24 870.555 1548.55 865.836 1551.75 863.264 1555 861.854 1554.23 860.44 1553.45 859.031 1552.68 859.031 1542.71 859.031 1532.73 859.014 1521.1Z' fill='#191818' fill-rule='evenodd'/><path d='M987.824 876.853C989 882.712 989 888.276 989 898 969.524 883.676 952.104 870.86 934 857 951.096 862.821 968.875 869.69 987.824 876.853Z' fill='#5EC2C8' fill-rule='evenodd'/><path d='M1031 913.626C1022.28 921.733 1012.94 928.917 1002.44 937 996.935 919.912 1000.44 908.62 1016.13 901 1021.65 904.676 1026.02 908.692 1031 913.626Z' fill='#5EC2C8' fill-rule='evenodd'/><path d='M1121 1006C1110.22 1003.81 1099.85 1000.35 1086 995.728 1093.53 990.755 1097.61 988.07 1102.7 985 1109.62 991.322 1115.52 998.027 1121 1006Z' fill='#5EC2C8' fill-rule='evenodd'/><path d='M1011 790.469C1005.39 803.645 1000.3 815.556 994.976 828 970.62 790.734 970.602 770.12 997.446 730 1002.71 752.149 1007.11 770.679 1011 790.469Z' fill='#F4F4F3' fill-rule='evenodd'/><path d='M1198.75 906.477C1206.15 890.496 1220.05 891.457 1233.09 890.247 1241.56 889.462 1249.97 888.152 1259 887 1242.71 924.437 1223.8 935.561 1178 933.829 1185.21 924.314 1191.59 915.887 1198.75 906.477Z' fill='#5EC2C8' fill-rule='evenodd'/><path d='M975 1297.25C981.262 1282.1 987.042 1268.13 992.887 1254 1017.12 1285.3 1017.01 1315.64 992.736 1348 986.534 1331.13 980.528 1314.78 975 1297.25Z' fill='#5EC2C8' fill-rule='evenodd'/><path d='M762.635 890.301C778.705 888.743 785.343 899.191 792.395 909.203 797.964 917.11 803.826 924.806 810 933.196 761.241 938.48 733.965 917.11 741.134 887 747.784 888.052 754.493 889.11 762.635 890.301Z' fill='#5EC2C8' fill-rule='evenodd'/><path d='M1214.26 1150.19C1233.99 1148.66 1239.54 1163.77 1246.66 1175.26 1248.47 1178.19 1242.53 1190.6 1240.11 1190.61 1227.04 1190.67 1212.39 1193.96 1202.75 1180.28 1195.31 1169.71 1187.25 1159.58 1177 1146 1191.68 1147.63 1202.25 1148.81 1214.26 1150.19Z' fill='#5EC2C8' fill-rule='evenodd'/><path d='M753 1162.35C759.793 1158.63 766.207 1153.09 773.468 1151.61 784.757 1149.3 796.622 1149.76 808 1151.19 807.573 1153.9 807.387 1154.48 807.202 1155.05 800.933 1162.81 795.499 1171.49 788.135 1178.05 782.065 1183.46 773.71 1186.35 764.546 1189 759.482 1179.22 756.241 1170.79 753 1162.35Z' fill='#5EC2C8' fill-rule='evenodd'/><path d='M751.594 1163C755.929 1171.04 759.235 1179.54 763 1189.24 752.184 1192.37 740.908 1194.29 725 1197 735.285 1183.51 742.925 1173.49 751.594 1163Z' fill='#E2E2E2' fill-rule='evenodd'/><path d='M818.001 1156C817.953 1157.02 816.92 1158.32 815 1160 815.08 1159.01 816.048 1157.65 818.001 1156Z' fill='#121C1E' fill-rule='evenodd'/><path d='M808.122 1155C807.888 1154.32 807.987 1153.56 808.452 1152 808.888 1152.18 809.001 1153.16 809 1154.14 809 1154.4 808.646 1154.66 808.122 1155Z' fill='#121C1E' fill-rule='evenodd'/><path d='M869 1188.57C868.237 1189.43 867.495 1189.02 867 1187.17 867.71 1186.7 868.302 1187.23 869 1188.57Z' fill='#121C1E' fill-rule='evenodd'/><path d='M797.006 1137C796.916 1136.29 797.914 1135.91 800 1136.02 799.974 1136.72 798.975 1136.99 797.006 1137Z' fill='#121C1E' fill-rule='evenodd'/><path d='M915.294 1132C916.141 1132.24 916.254 1133.24 915.483 1135 914.881 1134.68 914.87 1133.69 915.294 1132Z' fill='#121C1E' fill-rule='evenodd'/><path d='M905.412 1133.97C905.064 1134.23 904.867 1132.71 905.103 1132 906.166 1131.97 906.305 1132.78 905.412 1133.97Z' fill='#121C1E' fill-rule='evenodd'/><path d='M866.403 1110C865.76 1110.09 866.035 1108.7 866.219 1108.01 866.935 1107.91 867.466 1108.5 868 1109.08 867.681 1109.35 867.363 1109.63 866.403 1110Z' fill='#121C1E' fill-rule='evenodd'/><path d='M812 1071.58C812.269 1070.78 812.965 1070.77 813.968 1071.81 814.266 1072.27 812.42 1071.79 812 1071.58Z' fill='#121C1E' fill-rule='evenodd'/><path d='M1226.13 1496.95C1217.73 1498.6 1210.59 1499.69 1202 1501 1202 1489.1 1202 1479.14 1202 1464 1213.6 1468.26 1224.02 1470.83 1232.64 1476.29 1234.39 1477.4 1229.33 1489.4 1226.13 1496.95Z' fill='#E2E2E2' fill-rule='evenodd'/></g></svg>\"}",
+                "    }",
+                ")"
+              ],
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Purchase Frequency",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "a4eab297f72d490c81fb2232cd898192"
+          }
+        ],
+        "columns": [
+          {
+            "name": "Frequency of Purchases",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isNameInferred": true,
+            "lineageTag": "839e343b-71a7-47e0-a73e-6d96446b4940",
+            "sourceColumn": "df[Frequency of Purchases]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "annualPurchaseFreqInt",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "expression": [
+              "",
+              "SWITCH(",
+              "    'Purchase Frequency'[Frequency of Purchases],",
+              "    \"Fortnightly\", 26,",
+              "    \"Annually\", 1,",
+              "    \"Weekly\", 52,",
+              "    \"Quarterly\", 4,",
+              "    \"Bi-Weekly\", 26,",
+              "    \"Monthly\", 12,",
+              "    \"Every 3 Months\", 4",
+              ")"
+            ],
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "lineageTag": "dcc66387-d83e-4105-8904-c10a3fc889d7",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "3b5edacb-6207-4258-a613-09c17345b43f",
+        "partitions": [
+          {
+            "name": "Purchase Frequency",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "DISTINCT(",
+                "    df[Frequency of Purchases]",
+                ")"
+              ],
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "State Abbreviation",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "changedProperties": [
+          {
+            "property": "Name"
+          }
+        ],
+        "columns": [
+          {
+            "name": "US STATE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e23d97c0-abb0-49d2-b5f5-08260368293b",
+            "sourceColumn": "US STATE",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "POSTAL ABBREVIATION",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9dab7089-0316-4301-bdd0-8e25b47fcb83",
+            "sourceColumn": "POSTAL ABBREVIATION",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "STANDARD ABBREVIATION",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3d0b3c74-42da-4550-8e5e-f1a721300966",
+            "sourceColumn": "STANDARD ABBREVIATION",
+            "summarizeBy": "none"
+          }
+        ],
+        "lineageTag": "521e88c7-e5fa-4f24-b19c-0644a8d0e61e",
+        "partitions": [
+          {
+            "name": "State Abbreviation",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Web.BrowserContents(\"http://www.50states.com/abbreviations.htm\"),",
+                "    #\"Extracted Table From Html\" = Html.Table(Source, {{\"Column1\", \"FIGURE.wp-block-table.spaced.stripedRows.abbreviations-table:nth-child(12) > TABLE.table.table-hover > * > TR > TH:not([colspan]):not([rowspan]):nth-child(1):nth-last-child(3), FIGURE.wp-block-table.spaced.stripedRows.abbreviations-table:nth-child(12) > TABLE.table.table-hover > * > TR > TD:not([colspan]):not([rowspan]):nth-child(1):nth-last-child(3), FIGURE.wp-block-table.spaced.stripedRows.abbreviations-table:nth-child(12) > TABLE.table.table-hover > * > TR > TD[colspan=\"\"3\"\"]:not([rowspan]):nth-child(1):nth-last-child(1)\"}, {\"Column2\", \"FIGURE.wp-block-table.spaced.stripedRows.abbreviations-table:nth-child(12) > TABLE.table.table-hover > * > TR > TH:not([colspan]):not([rowspan]):nth-child(1):nth-last-child(3) + TH:not([colspan]):not([rowspan]):nth-child(2):nth-last-child(2), FIGURE.wp-block-table.spaced.stripedRows.abbreviations-table:nth-child(12) > TABLE.table.table-hover > * > TR > TD:not([colspan]):not([rowspan]):nth-child(1):nth-last-child(3) + TD:not([colspan]):not([rowspan]):nth-child(2):nth-last-child(2), FIGURE.wp-block-table.spaced.stripedRows.abbreviations-table:nth-child(12) > TABLE.table.table-hover > * > TR > TD[colspan=\"\"3\"\"]:not([rowspan]):nth-child(1):nth-last-child(1)\"}, {\"Column3\", \"FIGURE.wp-block-table.spaced.stripedRows.abbreviations-table:nth-child(12) > TABLE.table.table-hover > * > TR > TH:not([colspan]):not([rowspan]):nth-child(1):nth-last-child(3) + TH:not([colspan]):not([rowspan]):nth-child(2):nth-last-child(2) + TH:not([colspan]):not([rowspan]):nth-child(3):nth-last-child(1), FIGURE.wp-block-table.spaced.stripedRows.abbreviations-table:nth-child(12) > TABLE.table.table-hover > * > TR > TD:not([colspan]):not([rowspan]):nth-child(1):nth-last-child(3) + TD:not([colspan]):not([rowspan]):nth-child(2):nth-last-child(2) + TD:not([colspan]):not([rowspan]):nth-child(3):nth-last-child(1), FIGURE.wp-block-table.spaced.stripedRows.abbreviations-table:nth-child(12) > TABLE.table.table-hover > * > TR > TD[colspan=\"\"3\"\"]:not([rowspan]):nth-child(1):nth-last-child(1)\"}}, [RowSelector=\"FIGURE.wp-block-table.spaced.stripedRows.abbreviations-table:nth-child(12) > TABLE.table.table-hover > * > TR\"]),",
+                "    #\"Changed Type\" = Table.TransformColumnTypes(#\"Extracted Table From Html\",{{\"Column1\", type text}, {\"Column2\", type text}, {\"Column3\", type text}}),",
+                "    #\"Promoted Headers\" = Table.PromoteHeaders(#\"Changed Type\", [PromoteAllScalars=true]),",
+                "    #\"Changed Type1\" = Table.TransformColumnTypes(#\"Promoted Headers\",{{\"US STATE\", type text}, {\"POSTAL ABBREVIATION\", type text}, {\"STANDARD ABBREVIATION\", type text}}),",
+                "    #\"Removed Blank Rows\" = Table.SelectRows(#\"Changed Type1\", each not List.IsEmpty(List.RemoveMatchingItems(Record.FieldValues(_), {\"\", null}))),",
+                "    #\"Removed Duplicates\" = Table.Distinct(#\"Removed Blank Rows\", {\"POSTAL ABBREVIATION\"})",
+                "in",
+                "    #\"Removed Duplicates\""
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}
