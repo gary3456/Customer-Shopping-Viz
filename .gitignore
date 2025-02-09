@@ -1,5 +1,6 @@
 **/.pbi/localSettings.json
 **/.pbi/cache.abf
 *.jpg
-assets/*
+assets/*.jpg
+assets/*.svg
 *.pbix
