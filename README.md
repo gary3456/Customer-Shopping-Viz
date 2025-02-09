@@ -11,83 +11,83 @@
 ---
 
 ### Table of Contents
-- [Background](#background)
-- [Business Question](#business-question)
-- [Data Overview](#data-overview)
-- [Data Preparation](#data-preparation)
-- [Analysis](#analysis)
-- [Conclusion](#conclusion)
-- [Getting Started](#getting-started)
-- [License](#license)
+- [📖 Background](#-background)
+- [💡 Business Question](#-business-question)
+- [📊 Data Overview](#-data-overview)
+- [🧹 Data Preparation](#-data-preparation)
+- [🔍 Analysis](#-analysis)
+- [📝 Conclusion](#-conclusion)
+- [🚀 Getting Started](#-getting-started)
+- [📄 License](#-license)
 
 ---
 
-## Background
+## 📖 Background
 
-Understanding customer shopping patterns is crucial for making informed business and marketing decisions. We are social animals influenced by their surroundings. The shopping pattern of a customer is influenced by various factors such as demographics, preferences, and behavior. Analyzing customer shopping patterns can help businesses identify trends, preferences, and opportunities to improve their marketing strategies and customer service.
-
----
-
-## Business Question
-
-The business question is to analyze the shopping patterns of customers and identify key trends and insights that can help businesses improve their marketing strategies and customer service.
+Understanding customer shopping patterns is crucial for making informed business and marketing decisions. We are social animals influenced by their surroundings. The shopping pattern of a customer is affected by various factors such as demographics, preferences, and behavior. Analyzing these patterns can help businesses identify trends and opportunities to improve their strategies and customer service.
 
 ---
 
-## Data Overview
+## 💡 Business Question
 
-The dataset contains detailed transactional data across various product categories, customer demographics, and purchase channels. Key features may include:
-
-- Transaction Details: Purchase date, transaction value, product category, and payment method.
-- Customer Information: Age group, gender, location, and loyalty status.
-- Shopping Behavior: Frequency of purchases, average spend per transaction, and seasonal trends.
+The business question is to analyze customer shopping patterns and uncover key trends and insights to guide improvements in marketing strategies and service quality.
 
 ---
 
-## Data Preparation
+## 📊 Data Overview
 
-- **Data Loading**: Import the dataset into Power BI using Python script.
-- **Data Cleaning**: There is no missing data in the dataset. However, we need to convert the data types of some columns.
-- **Data Formatting**: Format the data to ensure consistency and accuracy in the analysis.
+The dataset consists of detailed transactional data across various product categories, customer demographics, and purchase channels. Key features include:
+
+- <b>Transaction Details</b>: Purchase date, transaction value, product category, and payment method.
+- <b>Customer Information</b>: Age group, gender, location, and loyalty status.
+- <b>Shopping Behavior</b>: Frequency of purchases, average spend per transaction, and seasonal trends.
 
 ---
 
-## Analysis
+## 🧹 Data Preparation
 
-The visualization is intended to provide an understanding of customer shopping patterns and business performance at two granularities: overviews and regional insights. It is designed to cater to different stakeholders, including business owners, who need a quick grasp of the status quo, marketing teams, and sales teams, who need detailed and actionable insights to make informed decisions.
+- <b>Data Loading</b>: Import the dataset into Power BI using a Python script.
+- <b>Data Cleaning</b>: Ensure consistency by converting necessary data types.
+- <b>Data Formatting</b>: Standardize formats for accuracy in analysis.
 
-Overviews provide a high-level summary of key metrics, while regional insights provide a detailed analysis of customer behavior by region. The regional insights enable a localized approach to marketing and sales strategies, taking into account regional preferences and trends based on the demographic.
+---
 
-The dashboard incorporates the temporal aspect of customer shopping patterns, such as seasonal trends and customer behavior over time. This allows businesses to zero in on specific time periods to identify patterns and trends that can help them optimize their marketing strategies and customer service.
+## 🔍 Analysis
+
+The visualization is designed to provide a dual perspective:
+- <b>Overview</b>: A high-level summary of key metrics.
+- <b>Regional Insights</b>: A detailed breakdown of customer behavior by region.
+
+It incorporates temporal trends to help identify seasonal patterns and optimize strategies.
 
 | Title                        | Description                                                         |
-|-------------------------------|---------------------------------------------------------------------|
-| **Overview**        | ![Overview Interaction Animation](assets/animation/overview_interaction.gif)                                             |
-| **Detailed State Sales** | ![Drilldown Interaction Animation](assets/animation/drilldown_interaction.gif)                                          |
+|------------------------------|---------------------------------------------------------------------|
+| **Overview**                 | ![Overview Animation](assets/animation/overview_interaction.gif)    |
+| **Detailed State Sales**     | ![Drilldown Animation](assets/animation/drilldown_interaction.gif)    |
+
+| Metric                        | Description                       |
+|-------------------------------|-----------------------------------|
+| **Total Sales Amount**        | Total revenue generated           |
+| **Average Transaction Value** | Mean spend per transaction        |
+| **Total Number of Customers** | Total distinct customers          |
+| **Customer Satisfaction**     | Overall satisfaction score        |
 
 ---
 
-| Metric                        | Description                                                         |
-|-------------------------------|---------------------------------------------------------------------|
-| **Total Sales Amount**        | Total revenue generated                                             |
-| **Average Transaction Value** | Mean spend per transaction                                          |
-| **Total Number of Customers** | Total distinct customers                                            |
-| **Customer Satisfaction**     | Overall satisfaction score                                          |
+## 📝 Conclusion
+
+Constrained by the available data, this visualization provides a snapshot of customer shopping patterns and business performance. These insights serve as a starting point for deeper exploration and decision-making:
+
+| Visualization                   | Business Questions                                                                                             |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------|
+| **Subscription Rate**           | What customer demographics are most likely to subscribe? <br>How does average spend compare between groups?    |
+| **Sales by Region**             | What revenue potential exists with increased subscription rates? <br>How can market positioning be optimized?    |
+| **Popular Products**            | Which products are favored by customers? <br>Is there a link between promotional strategies and purchase behavior?|
+| **Shopping Frequency & Shipping**| How does frequency relate to preferred shipping methods? <br>What improvements can optimize revenue?             |
 
 ---
 
-## Conclusion
-
-Constrained by the scope of the dataset, this visualization attempts to provide a snapshot of customer shopping patterns and business performance. The insights derived from this visualization can serve as a starting point for further analysis and exploration of customer behavior and preferences as below:
-
-| Visualization | Business Questions |
-|---------------|----------|
-| **Subscription rate of customers** | What customer demographics are most likely to subscribe? <br>What is the average spend of subscribed customers compared to non-subscribed customers? <br>What customer demographics are most likely to subscribe? |
-| **Sales by region** | What is the potential revenue increase from increasing the subscription rate? <br>What is the projected revenue based on current sales trends? <br>What is the market share of each region, deriving from the existing customer base? <br>How to position the business in the market to capture the opportunity? |
-| **Popular products** | What products are most popular among customers? <br>Are the customer more susceptible to purchasing certain products due to specific marketing strategies, like promotion? If so, on what platform? |
-| **Shopping frequency and shipping method** | Is there a relationship between shopping frequency and preferred shipping methods? <br>What are the factors driving the decision of customers to choose a specific shipping method? <br>From the current shipping method selection trend, what is the projected revenue increase from optimizing the shipping method? |
-
-## Getting Started
+## 🚀 Getting Started
 
 To work on this project locally, clone the repository by running:
 
@@ -95,7 +95,7 @@ To work on this project locally, clone the repository by running:
 git clone https://github.com/gary3456/Customer-Shopping-Viz.git
 ```
 
-Then, navigate to the project folder (it will be created locally with the repository name):
+Then, navigate to the project folder (the repository's name will be used as the folder):
 
 ```bash
 cd Customer-Shopping-Viz
@@ -103,9 +103,10 @@ cd Customer-Shopping-Viz
 
 Feel free to submit pull requests with improvements.
 
-## License
+---
+
+## 📄 License
 
 This project is licensed under the Batch License.
 
 ![Batch](https://img.shields.io/badge/License-MIT-Yellow)
-````
